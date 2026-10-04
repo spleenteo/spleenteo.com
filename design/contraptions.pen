@@ -1,0 +1,2916 @@
+{
+  "version": "2.20",
+  "children": [
+    {
+      "type": "frame",
+      "id": "bi8Au",
+      "x": 0,
+      "y": 0,
+      "name": "Desktop — Home",
+      "clip": true,
+      "width": 1440,
+      "fill": "$bg",
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "DqDLt",
+          "name": "Nav",
+          "width": "fill_container",
+          "padding": [
+            28,
+            64
+          ],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "YWYoq",
+              "name": "Brand",
+              "fill": "$ink",
+              "content": "spleenteo.com",
+              "fontFamily": "$font-mono",
+              "fontSize": 13,
+              "fontWeight": "normal",
+              "letterSpacing": 0.5
+            },
+            {
+              "type": "frame",
+              "id": "RQ9cI",
+              "name": "Nav Links",
+              "gap": 32,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "kEvWZ",
+                  "name": "Contraptions",
+                  "fill": "$ink-dim",
+                  "content": "Contraptions",
+                  "fontFamily": "$font-mono",
+                  "fontSize": 13,
+                  "fontWeight": "normal",
+                  "letterSpacing": 0.5
+                },
+                {
+                  "type": "text",
+                  "id": "X3ClNA",
+                  "name": "About",
+                  "fill": "$ink-dim",
+                  "content": "About",
+                  "fontFamily": "$font-mono",
+                  "fontSize": 13,
+                  "fontWeight": "normal",
+                  "letterSpacing": 0.5
+                },
+                {
+                  "type": "text",
+                  "id": "kazzQ",
+                  "name": "GitHub",
+                  "fill": "$ink-dim",
+                  "content": "GitHub",
+                  "fontFamily": "$font-mono",
+                  "fontSize": 13,
+                  "fontWeight": "normal",
+                  "letterSpacing": 0.5
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "dXIGY",
+          "name": "Hero",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 40,
+          "padding": [
+            120,
+            64,
+            140,
+            64
+          ],
+          "children": [
+            {
+              "type": "text",
+              "id": "JPh6W",
+              "name": "Kicker",
+              "fill": "$ink-dim",
+              "content": "A WORKSHOP LOG · 2026",
+              "fontFamily": "$font-mono",
+              "fontSize": 13,
+              "fontWeight": "normal",
+              "letterSpacing": 0.5
+            },
+            {
+              "type": "text",
+              "id": "kNbn0",
+              "name": "Title",
+              "fill": "$ink",
+              "content": "Contraptions",
+              "lineHeight": 0.9,
+              "fontFamily": "$font-head",
+              "fontSize": 184,
+              "fontWeight": "700",
+              "letterSpacing": -6
+            },
+            {
+              "type": "frame",
+              "id": "g33903",
+              "name": "Hero Row",
+              "width": "fill_container",
+              "justifyContent": "space_between",
+              "alignItems": "end",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "YXLZg",
+                  "name": "Lede",
+                  "fill": "$ink",
+                  "textGrowth": "fixed-width",
+                  "width": 620,
+                  "content": "Small tools I built for my own problems. Some of them might fix yours.",
+                  "lineHeight": 1.35,
+                  "fontFamily": "$font-body",
+                  "fontSize": 28,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "frame",
+                  "id": "nQZ9k",
+                  "name": "Accent Strip",
+                  "gap": 10,
+                  "children": [
+                    {
+                      "type": "rectangle",
+                      "id": "UFloc",
+                      "name": "Swatch quadra",
+                      "fill": "$acc-quadra",
+                      "width": 44,
+                      "height": 10
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "IKmEl",
+                      "name": "Swatch maestro",
+                      "fill": "$acc-maestro",
+                      "width": 44,
+                      "height": 10
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "EOCYQ",
+                      "name": "Swatch devflow",
+                      "fill": "$acc-devflow",
+                      "width": 44,
+                      "height": 10
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "xw2FC",
+                      "name": "Swatch datobar",
+                      "fill": "$acc-datobar",
+                      "width": 44,
+                      "height": 10
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "lptcD",
+                      "name": "Swatch condates",
+                      "fill": "$acc-condates",
+                      "width": 44,
+                      "height": 10
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "SqXad",
+              "name": "Byline",
+              "fill": "$ink-dim",
+              "content": "by Matteo Papadopoulos · Firenze",
+              "fontFamily": "$font-mono",
+              "fontSize": 13,
+              "fontWeight": "normal",
+              "letterSpacing": 0.5
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "YW6fO",
+          "name": "Contraptions",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 140,
+          "padding": [
+            40,
+            0,
+            160,
+            0
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "HiZat",
+              "name": "List Header",
+              "width": "fill_container",
+              "stroke": "$line",
+              "strokeWidth": {
+                "bottom": 1
+              },
+              "padding": [
+                0,
+                64
+              ],
+              "justifyContent": "space_between",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "tHsmL",
+                  "name": "List Title",
+                  "fill": "$ink-dim",
+                  "content": "THE CONTRAPTIONS",
+                  "fontFamily": "$font-mono",
+                  "fontSize": 13,
+                  "fontWeight": "normal",
+                  "letterSpacing": 0.5
+                },
+                {
+                  "type": "text",
+                  "id": "FSf8t",
+                  "name": "List Count",
+                  "fill": "$ink-dim",
+                  "content": "05 usable · 02 made for me",
+                  "fontFamily": "$font-mono",
+                  "fontSize": 13,
+                  "fontWeight": "normal",
+                  "letterSpacing": 0.5
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "z0LBS",
+              "name": "Row Quadra",
+              "width": "fill_container",
+              "height": 660,
+              "gap": 96,
+              "padding": [
+                0,
+                64,
+                0,
+                810.9741361829873
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "wMlAN",
+                  "layoutPosition": "absolute",
+                  "x": -53.175911166535045,
+                  "y": 16.075272456845312,
+                  "name": "Panel Quadra",
+                  "rotation": -370,
+                  "clip": true,
+                  "width": 780,
+                  "height": 500,
+                  "fill": "$acc-quadra",
+                  "layout": "none",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "oZ00u",
+                      "x": 190,
+                      "y": -40,
+                      "name": "Index",
+                      "fill": "#0A0A0A",
+                      "content": "01",
+                      "lineHeight": 1,
+                      "fontFamily": "$font-head",
+                      "fontSize": 300,
+                      "fontWeight": "800",
+                      "letterSpacing": -14
+                    },
+                    {
+                      "type": "text",
+                      "id": "rnXKG",
+                      "x": 200,
+                      "y": 452,
+                      "name": "Panel Label",
+                      "enabled": false,
+                      "fill": "#0A0A0A",
+                      "content": "[ screenshot / demo loop ]",
+                      "fontFamily": "$font-mono",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "WbOsO",
+                      "x": 480,
+                      "y": 200,
+                      "name": "Mark Quadra",
+                      "width": 240,
+                      "height": 240,
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "assets/quadra-icon.png",
+                        "mode": "cover"
+                      },
+                      "cornerRadius": 54,
+                      "effect": {
+                        "type": "shadow",
+                        "shadowType": "outer",
+                        "color": "#00000055",
+                        "offset": {
+                          "x": 0,
+                          "y": 20
+                        },
+                        "blur": 50
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "sIPKS",
+                  "name": "Text Quadra",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 22,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "U97q8k",
+                      "name": "Kind",
+                      "fill": "$acc-quadra",
+                      "content": "MACOS APP",
+                      "fontFamily": "$font-mono",
+                      "fontSize": 13,
+                      "fontWeight": "normal",
+                      "letterSpacing": 0.5
+                    },
+                    {
+                      "type": "text",
+                      "id": "a6aPEl",
+                      "name": "Name",
+                      "fill": "$ink",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Quadra",
+                      "lineHeight": 1,
+                      "fontFamily": "$font-head",
+                      "fontSize": 64,
+                      "fontWeight": "700",
+                      "letterSpacing": -2
+                    },
+                    {
+                      "type": "text",
+                      "id": "WGoLH",
+                      "name": "One-liner",
+                      "fill": "$ink",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Straighten a crooked photo by drawing one line.",
+                      "lineHeight": 1.35,
+                      "fontFamily": "$font-body",
+                      "fontSize": 24,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "iMW4U",
+                      "name": "Why",
+                      "fill": "$ink-dim",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "My daughter needed to fix tilted pictures. Every app I found wanted a subscription for a two-second job, so I made one that doesn't.",
+                      "lineHeight": 1.6,
+                      "fontFamily": "$font-body",
+                      "fontSize": 17,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "Ignpj",
+                      "name": "Meta Row",
+                      "width": "fill_container",
+                      "stroke": "$line",
+                      "strokeWidth": {
+                        "top": 1
+                      },
+                      "gap": 24,
+                      "padding": [
+                        18,
+                        0,
+                        0,
+                        0
+                      ],
+                      "justifyContent": "space_between",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "H3cYj",
+                          "name": "Meta",
+                          "fill": "$ink-dim",
+                          "content": "v0.6.0 · macOS · open source",
+                          "fontFamily": "$font-mono",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "g0088c",
+                          "name": "Link",
+                          "fill": "$acc-quadra",
+                          "content": "github.com/spleenteo/quadra →",
+                          "fontFamily": "$font-mono",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "fRFye",
+              "name": "Row Maestro",
+              "width": "fill_container",
+              "height": 660,
+              "gap": 96,
+              "padding": [
+                0,
+                810.9741361829875,
+                0,
+                64
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "k2cE0",
+                  "name": "Text Maestro",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 22,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "I59Pup",
+                      "name": "Kind",
+                      "fill": "$acc-maestro",
+                      "content": "CLAUDE CODE PLUGIN",
+                      "fontFamily": "$font-mono",
+                      "fontSize": 13,
+                      "fontWeight": "normal",
+                      "letterSpacing": 0.5
+                    },
+                    {
+                      "type": "text",
+                      "id": "FzWGL",
+                      "name": "Name",
+                      "fill": "$ink",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Maestro",
+                      "lineHeight": 1,
+                      "fontFamily": "$font-head",
+                      "fontSize": 64,
+                      "fontWeight": "700",
+                      "letterSpacing": -2
+                    },
+                    {
+                      "type": "text",
+                      "id": "iu5IM",
+                      "name": "One-liner",
+                      "fill": "$ink",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "A personal orchestrator for Claude Code, with a name, a memory and its own files.",
+                      "lineHeight": 1.35,
+                      "fontFamily": "$font-body",
+                      "fontSize": 24,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "xqJhx",
+                      "name": "Why",
+                      "fill": "$ink-dim",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "One assistant that remembers what happened, for real, locally.",
+                      "lineHeight": 1.6,
+                      "fontFamily": "$font-body",
+                      "fontSize": 17,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "y0Qr9Y",
+                      "name": "Meta Row",
+                      "width": "fill_container",
+                      "stroke": "$line",
+                      "strokeWidth": {
+                        "top": 1
+                      },
+                      "gap": 24,
+                      "padding": [
+                        18,
+                        0,
+                        0,
+                        0
+                      ],
+                      "justifyContent": "space_between",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "KpPJr",
+                          "name": "Meta",
+                          "fill": "$ink-dim",
+                          "content": "template + plugin · open source",
+                          "fontFamily": "$font-mono",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "oyTvu",
+                          "name": "Link",
+                          "fill": "$acc-maestro",
+                          "content": "github.com/spleenteo/maestro →",
+                          "fontFamily": "$font-mono",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "OskDK",
+                  "layoutPosition": "absolute",
+                  "x": 725.0258638170125,
+                  "y": 151.52085103705085,
+                  "name": "Panel Maestro",
+                  "rotation": -350,
+                  "clip": true,
+                  "width": 780,
+                  "height": 500,
+                  "fill": "$acc-maestro",
+                  "layout": "none",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "oYGXM",
+                      "x": 300,
+                      "y": -40,
+                      "name": "Index",
+                      "fill": "#0A0A0A",
+                      "content": "02",
+                      "lineHeight": 1,
+                      "fontFamily": "$font-head",
+                      "fontSize": 300,
+                      "fontWeight": "800",
+                      "letterSpacing": -14
+                    },
+                    {
+                      "type": "text",
+                      "id": "sogJC",
+                      "x": 64,
+                      "y": 452,
+                      "name": "Panel Label",
+                      "enabled": false,
+                      "fill": "#0A0A0A",
+                      "content": "[ mark · to prepare in the repo ]",
+                      "fontFamily": "$font-mono",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "y15BAZ",
+                      "x": 70,
+                      "y": 220,
+                      "name": "Mark Maestro",
+                      "width": 240,
+                      "height": 240,
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "assets/maestro-icon-1024.png",
+                        "mode": "cover"
+                      },
+                      "cornerRadius": 54,
+                      "effect": {
+                        "type": "shadow",
+                        "shadowType": "outer",
+                        "color": "#00000055",
+                        "offset": {
+                          "x": 0,
+                          "y": 20
+                        },
+                        "blur": 50
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "cVE0E",
+              "name": "Row devflow / projectflow",
+              "width": "fill_container",
+              "height": 660,
+              "gap": 96,
+              "padding": [
+                0,
+                64,
+                0,
+                810.9741361829873
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "leMQ5",
+                  "layoutPosition": "absolute",
+                  "x": -53.175911166535045,
+                  "y": 16.075272456845312,
+                  "name": "Panel devflow / projectflow",
+                  "rotation": -370,
+                  "clip": true,
+                  "width": 780,
+                  "height": 500,
+                  "fill": "$acc-devflow",
+                  "layout": "none",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "e1meb",
+                      "x": 190,
+                      "y": -40,
+                      "name": "Index",
+                      "fill": "#0A0A0A",
+                      "content": "03",
+                      "lineHeight": 1,
+                      "fontFamily": "$font-head",
+                      "fontSize": 300,
+                      "fontWeight": "800",
+                      "letterSpacing": -14
+                    },
+                    {
+                      "type": "text",
+                      "id": "mzi2C",
+                      "x": 200,
+                      "y": 452,
+                      "name": "Panel Label",
+                      "fill": "#0A0A0A",
+                      "content": "[ mark · to prepare in the repo ]",
+                      "fontFamily": "$font-mono",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "xVBAW",
+                  "name": "Text devflow / projectflow",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 22,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "dwLcR",
+                      "name": "Kind",
+                      "fill": "$acc-devflow",
+                      "content": "CLAUDE CODE SKILLS",
+                      "fontFamily": "$font-mono",
+                      "fontSize": 13,
+                      "fontWeight": "normal",
+                      "letterSpacing": 0.5
+                    },
+                    {
+                      "type": "text",
+                      "id": "Z3T1yV",
+                      "name": "Name",
+                      "fill": "$ink",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "devflow / projectflow",
+                      "lineHeight": 1,
+                      "fontFamily": "$font-head",
+                      "fontSize": 64,
+                      "fontWeight": "700",
+                      "letterSpacing": -2
+                    },
+                    {
+                      "type": "text",
+                      "id": "J9blmh",
+                      "name": "One-liner",
+                      "fill": "$ink",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Take a piece of work from idea to done, one small slice at a time.",
+                      "lineHeight": 1.35,
+                      "fontFamily": "$font-body",
+                      "fontSize": 24,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "rehlb",
+                      "name": "Why",
+                      "fill": "$ink-dim",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Brainstorming, framing, shaping and planning: devflow for code, projectflow for life projects. Both keep the thread on disk between sessions.",
+                      "lineHeight": 1.6,
+                      "fontFamily": "$font-body",
+                      "fontSize": 17,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "hnoBc",
+                      "name": "Meta Row",
+                      "width": "fill_container",
+                      "stroke": "$line",
+                      "strokeWidth": {
+                        "top": 1
+                      },
+                      "gap": 24,
+                      "padding": [
+                        18,
+                        0,
+                        0,
+                        0
+                      ],
+                      "justifyContent": "space_between",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "ywysa",
+                          "name": "Meta",
+                          "fill": "$ink-dim",
+                          "content": "skills · open source",
+                          "fontFamily": "$font-mono",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "hzjmC",
+                          "name": "Link",
+                          "fill": "$acc-devflow",
+                          "content": "github.com/spleenteo/devflow →",
+                          "fontFamily": "$font-mono",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "nbMAr",
+              "name": "Row Dato bar",
+              "width": "fill_container",
+              "height": 660,
+              "gap": 96,
+              "padding": [
+                0,
+                810.9741361829875,
+                0,
+                64
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "IzDz2",
+                  "name": "Text Dato bar",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 22,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "gSDSi",
+                      "name": "Kind",
+                      "fill": "$acc-datobar",
+                      "content": "NPM PACKAGE",
+                      "fontFamily": "$font-mono",
+                      "fontSize": 13,
+                      "fontWeight": "normal",
+                      "letterSpacing": 0.5
+                    },
+                    {
+                      "type": "text",
+                      "id": "eB4ke",
+                      "name": "Name",
+                      "fill": "$ink",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Dato bar",
+                      "lineHeight": 1,
+                      "fontFamily": "$font-head",
+                      "fontSize": 64,
+                      "fontWeight": "700",
+                      "letterSpacing": -2
+                    },
+                    {
+                      "type": "text",
+                      "id": "hFPfO",
+                      "name": "One-liner",
+                      "fill": "$ink",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "A local dev bar for DatoCMS sites: drafts, published content and visual editing in one click.",
+                      "lineHeight": 1.35,
+                      "fontFamily": "$font-body",
+                      "fontSize": 24,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "v1W21",
+                      "name": "Why",
+                      "fill": "$ink-dim",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "I kept rebuilding the same toggles in every project. Now it's one package that works in any framework.",
+                      "lineHeight": 1.6,
+                      "fontFamily": "$font-body",
+                      "fontSize": 17,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "OlShc",
+                      "name": "Meta Row",
+                      "width": "fill_container",
+                      "stroke": "$line",
+                      "strokeWidth": {
+                        "top": 1
+                      },
+                      "gap": 24,
+                      "padding": [
+                        18,
+                        0,
+                        0,
+                        0
+                      ],
+                      "justifyContent": "space_between",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "Spd2w",
+                          "name": "Meta",
+                          "fill": "$ink-dim",
+                          "content": "v0.1.0 · npm",
+                          "fontFamily": "$font-mono",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "eFCKw",
+                          "name": "Link",
+                          "fill": "$acc-datobar",
+                          "content": "github.com/spleenteo/datocms-dev-bar →",
+                          "fontFamily": "$font-mono",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "UK17v",
+                  "layoutPosition": "absolute",
+                  "x": 725.0258638170125,
+                  "y": 151.52085103705085,
+                  "name": "Panel Dato bar",
+                  "rotation": -350,
+                  "clip": true,
+                  "width": 780,
+                  "height": 500,
+                  "fill": "$acc-datobar",
+                  "layout": "none",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "c7dYcY",
+                      "x": 300,
+                      "y": -40,
+                      "name": "Index",
+                      "fill": "#0A0A0A",
+                      "content": "04",
+                      "lineHeight": 1,
+                      "fontFamily": "$font-head",
+                      "fontSize": 300,
+                      "fontWeight": "800",
+                      "letterSpacing": -14
+                    },
+                    {
+                      "type": "text",
+                      "id": "VaRQC",
+                      "x": 64,
+                      "y": 452,
+                      "name": "Panel Label",
+                      "fill": "#0A0A0A",
+                      "content": "[ mark · to prepare in the repo ]",
+                      "fontFamily": "$font-mono",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "P9xr9E",
+              "name": "Row Condates",
+              "width": "fill_container",
+              "height": 660,
+              "gap": 96,
+              "padding": [
+                0,
+                64,
+                0,
+                810.9741361829873
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "q1ou8",
+                  "layoutPosition": "absolute",
+                  "x": -53.175911166535045,
+                  "y": 16.075272456845312,
+                  "name": "Panel Condates",
+                  "rotation": -370,
+                  "clip": true,
+                  "width": 780,
+                  "height": 500,
+                  "fill": "$acc-condates",
+                  "layout": "none",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "cVqO2",
+                      "x": 190,
+                      "y": -40,
+                      "name": "Index",
+                      "fill": "#0A0A0A",
+                      "content": "05",
+                      "lineHeight": 1,
+                      "fontFamily": "$font-head",
+                      "fontSize": 300,
+                      "fontWeight": "800",
+                      "letterSpacing": -14
+                    },
+                    {
+                      "type": "text",
+                      "id": "HWhq2",
+                      "x": 200,
+                      "y": 452,
+                      "name": "Panel Label",
+                      "fill": "#0A0A0A",
+                      "content": "[ mark · to prepare in the repo ]",
+                      "fontFamily": "$font-mono",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "H0jinb",
+                  "name": "Text Condates",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 22,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "kfx14",
+                      "name": "Kind",
+                      "fill": "$acc-condates",
+                      "content": "DATOCMS PLUGIN",
+                      "fontFamily": "$font-mono",
+                      "fontSize": 13,
+                      "fontWeight": "normal",
+                      "letterSpacing": 0.5
+                    },
+                    {
+                      "type": "text",
+                      "id": "GcCk0",
+                      "name": "Name",
+                      "fill": "$ink",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Condates",
+                      "lineHeight": 1,
+                      "fontFamily": "$font-head",
+                      "fontSize": 64,
+                      "fontWeight": "700",
+                      "letterSpacing": -2
+                    },
+                    {
+                      "type": "text",
+                      "id": "wHSc1",
+                      "name": "One-liner",
+                      "fill": "$ink",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Dates you only half know: a year, a month, or the full day.",
+                      "lineHeight": 1.35,
+                      "fontFamily": "$font-body",
+                      "fontSize": 24,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "dKFII",
+                      "name": "Why",
+                      "fill": "$ink-dim",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "History rarely comes with exact dates. This lets editors say so instead of inventing a day.",
+                      "lineHeight": 1.6,
+                      "fontFamily": "$font-body",
+                      "fontSize": 17,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "QRcbg",
+                      "name": "Meta Row",
+                      "width": "fill_container",
+                      "stroke": "$line",
+                      "strokeWidth": {
+                        "top": 1
+                      },
+                      "gap": 24,
+                      "padding": [
+                        18,
+                        0,
+                        0,
+                        0
+                      ],
+                      "justifyContent": "space_between",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "VHWRq",
+                          "name": "Meta",
+                          "fill": "$ink-dim",
+                          "content": "v0.1.1 · DatoCMS marketplace",
+                          "fontFamily": "$font-mono",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "G5EMv",
+                          "name": "Link",
+                          "fill": "$acc-condates",
+                          "content": "datocms.com/marketplace →",
+                          "fontFamily": "$font-mono",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "EP1Hc",
+          "name": "Made For Me",
+          "width": "fill_container",
+          "layout": "vertical",
+          "padding": [
+            0,
+            64,
+            120,
+            64
+          ],
+          "children": [
+            {
+              "type": "text",
+              "id": "U1VwGm",
+              "name": "MFM Title",
+              "fill": "$ink-dim",
+              "content": "MADE FOR ME · NOT FOR SALE, NOT FOR SIGN-UP",
+              "fontFamily": "$font-mono",
+              "fontSize": 13,
+              "fontWeight": "normal",
+              "letterSpacing": 0.5
+            },
+            {
+              "type": "frame",
+              "id": "J6J1Q",
+              "name": "MFM Spacer",
+              "width": "fill_container",
+              "height": 24
+            },
+            {
+              "type": "frame",
+              "id": "sninC",
+              "name": "MFM Slacky",
+              "width": "fill_container",
+              "stroke": "$line",
+              "strokeWidth": {
+                "top": 1
+              },
+              "gap": 40,
+              "padding": [
+                26,
+                0
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "rectangle",
+                  "cornerRadius": 7,
+                  "id": "JO6Nx",
+                  "name": "Dot Slacky",
+                  "fill": {
+                    "type": "image",
+                    "enabled": true,
+                    "url": "assets/slacky-icon.png",
+                    "mode": "cover"
+                  },
+                  "width": 28,
+                  "height": 28
+                },
+                {
+                  "type": "text",
+                  "id": "UX3Ez",
+                  "name": "MFM Name Slacky",
+                  "fill": "$ink",
+                  "textGrowth": "fixed-width",
+                  "width": 260,
+                  "content": "Slacky",
+                  "fontFamily": "$font-head",
+                  "fontSize": 32,
+                  "fontWeight": "700",
+                  "letterSpacing": -1
+                },
+                {
+                  "type": "text",
+                  "id": "WbOXt",
+                  "name": "MFM Desc Slacky",
+                  "fill": "$ink-dim",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "A task manager that notices when I procrastinate and says so. Private, runs my week.",
+                  "lineHeight": 1.5,
+                  "fontFamily": "$font-body",
+                  "fontSize": 18,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "A4kMPd",
+              "name": "MFM Trama",
+              "width": "fill_container",
+              "stroke": "$line",
+              "strokeWidth": {
+                "top": 1
+              },
+              "gap": 40,
+              "padding": [
+                26,
+                0
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "rectangle",
+                  "cornerRadius": 7,
+                  "id": "aZbc0",
+                  "name": "Dot Trama",
+                  "fill": "#2EE59D",
+                  "width": 28,
+                  "height": 28
+                },
+                {
+                  "type": "text",
+                  "id": "iqjFx",
+                  "name": "MFM Name Trama",
+                  "fill": "$ink",
+                  "textGrowth": "fixed-width",
+                  "width": 260,
+                  "content": "Trama",
+                  "fontFamily": "$font-head",
+                  "fontSize": 32,
+                  "fontWeight": "700",
+                  "letterSpacing": -1
+                },
+                {
+                  "type": "text",
+                  "id": "qdDB7",
+                  "name": "MFM Desc Trama",
+                  "fill": "$ink-dim",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Hierarchical timelines of historical processes, built on DatoCMS.",
+                  "lineHeight": 1.5,
+                  "fontFamily": "$font-body",
+                  "fontSize": 18,
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "NZ2Bk",
+          "name": "Slot Wrap",
+          "width": "fill_container",
+          "padding": [
+            0,
+            64,
+            140,
+            64
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "wzg2z",
+              "name": "Slot — next experiment (empty)",
+              "width": "fill_container",
+              "cornerRadius": 2,
+              "stroke": "#3A3A3A",
+              "strokeWidth": 1,
+              "layout": "vertical",
+              "gap": 14,
+              "padding": 56,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "OxZW0",
+                  "name": "Slot Kicker",
+                  "fill": "$ink-dim",
+                  "content": "RESERVED · NEXT EXPERIMENT",
+                  "fontFamily": "$font-mono",
+                  "fontSize": 13,
+                  "fontWeight": "normal",
+                  "letterSpacing": 0.5
+                },
+                {
+                  "type": "text",
+                  "id": "eF1g7",
+                  "name": "Slot Note",
+                  "fill": "$ink-dim",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Empty on purpose. Something here will ask for more than a click.",
+                  "lineHeight": 1.4,
+                  "fontFamily": "$font-body",
+                  "fontSize": 22,
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "sqqTJ",
+          "name": "About",
+          "width": "fill_container",
+          "fill": "$bg-raised",
+          "gap": 96,
+          "padding": [
+            120,
+            64
+          ],
+          "children": [
+            {
+              "type": "text",
+              "id": "mj9Ua",
+              "name": "About Kicker",
+              "fill": "$ink-dim",
+              "textGrowth": "fixed-width",
+              "width": 260,
+              "content": "ABOUT",
+              "fontFamily": "$font-mono",
+              "fontSize": 13,
+              "fontWeight": "normal",
+              "letterSpacing": 0.5
+            },
+            {
+              "type": "frame",
+              "id": "JidoD",
+              "name": "About Body",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 32,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "h4bM4w",
+                  "name": "About Text",
+                  "fill": "$ink",
+                  "textGrowth": "fixed-width",
+                  "width": 820,
+                  "content": "Ciao, I'm Matteo. I've been making things for the web for about thirty years. By day I run the partner program at DatoCMS; these are the side projects I play with, pairing my skills with Claude Code.",
+                  "lineHeight": 1.45,
+                  "fontFamily": "$font-body",
+                  "fontSize": 26,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "frame",
+                  "id": "O0U3A",
+                  "name": "Contacts",
+                  "gap": 40,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "OKt0w",
+                      "name": "Contact hello@spleenteo.com",
+                      "fill": "$ink",
+                      "content": "ciao@spleenteo.com →",
+                      "fontFamily": "$font-mono",
+                      "fontSize": 15,
+                      "fontWeight": "normal",
+                      "letterSpacing": 0.5
+                    },
+                    {
+                      "type": "text",
+                      "id": "UUrU8",
+                      "name": "Contact github.com/spleenteo",
+                      "fill": "$ink",
+                      "content": "github.com/spleenteo →",
+                      "fontFamily": "$font-mono",
+                      "fontSize": 15,
+                      "fontWeight": "normal",
+                      "letterSpacing": 0.5
+                    },
+                    {
+                      "type": "text",
+                      "id": "o0Kumf",
+                      "x": 491,
+                      "y": 0,
+                      "name": "Contact x.com/spleenteo",
+                      "enabled": false,
+                      "fill": "$ink",
+                      "content": "x.com/spleenteo →",
+                      "fontFamily": "$font-mono",
+                      "fontSize": 15,
+                      "fontWeight": "normal",
+                      "letterSpacing": 0.5
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "rNhRC",
+          "name": "Footer",
+          "width": "fill_container",
+          "padding": [
+            32,
+            64
+          ],
+          "justifyContent": "space_between",
+          "children": [
+            {
+              "type": "text",
+              "id": "AqJWa",
+              "name": "Foot L",
+              "fill": "$ink-dim",
+              "content": "spleenteo · Firenze",
+              "fontFamily": "$font-mono",
+              "fontSize": 13,
+              "fontWeight": "normal",
+              "letterSpacing": 0.5
+            },
+            {
+              "type": "text",
+              "id": "F0qAa",
+              "name": "Foot R",
+              "fill": "$ink-dim",
+              "content": "© 2026 Matteo Papadopoulos",
+              "fontFamily": "$font-mono",
+              "fontSize": 13,
+              "fontWeight": "normal",
+              "letterSpacing": 0.5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "DuylI",
+      "x": 1600,
+      "y": 0,
+      "name": "Mobile — Home",
+      "clip": true,
+      "width": 390,
+      "fill": "$bg",
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "swyza",
+          "name": "Nav",
+          "width": "fill_container",
+          "padding": [
+            20,
+            24
+          ],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "wXN3V",
+              "name": "Brand",
+              "fill": "$ink",
+              "content": "spleenteo.com",
+              "fontFamily": "$font-mono",
+              "fontSize": 13,
+              "fontWeight": "normal",
+              "letterSpacing": 0.5
+            },
+            {
+              "type": "frame",
+              "id": "Ls4wR",
+              "name": "Nav Links",
+              "gap": 16,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "z3EHQC",
+                  "name": "Contraptions",
+                  "fill": "$ink-dim",
+                  "content": "Contraptions",
+                  "fontFamily": "$font-mono",
+                  "fontSize": 13,
+                  "fontWeight": "normal",
+                  "letterSpacing": 0.5
+                },
+                {
+                  "type": "text",
+                  "id": "Z75WA",
+                  "name": "About",
+                  "fill": "$ink-dim",
+                  "content": "About",
+                  "fontFamily": "$font-mono",
+                  "fontSize": 13,
+                  "fontWeight": "normal",
+                  "letterSpacing": 0.5
+                },
+                {
+                  "type": "text",
+                  "id": "PQxjr",
+                  "name": "GitHub",
+                  "fill": "$ink-dim",
+                  "content": "GitHub",
+                  "fontFamily": "$font-mono",
+                  "fontSize": 13,
+                  "fontWeight": "normal",
+                  "letterSpacing": 0.5
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "ZABE8",
+          "name": "Hero",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 24,
+          "padding": [
+            56,
+            24,
+            72,
+            24
+          ],
+          "children": [
+            {
+              "type": "text",
+              "id": "u0gvP",
+              "name": "Kicker",
+              "fill": "$ink-dim",
+              "content": "A WORKSHOP LOG · 2026",
+              "fontFamily": "$font-mono",
+              "fontSize": 13,
+              "fontWeight": "normal",
+              "letterSpacing": 0.5
+            },
+            {
+              "type": "text",
+              "id": "QXIVk",
+              "name": "Title",
+              "fill": "$ink",
+              "content": "Contraptions",
+              "lineHeight": 0.9,
+              "fontFamily": "$font-head",
+              "fontSize": 64,
+              "fontWeight": "700",
+              "letterSpacing": -2
+            },
+            {
+              "type": "frame",
+              "id": "HdQqr",
+              "name": "Hero Row",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 24,
+              "justifyContent": "space_between",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "xZmgX",
+                  "name": "Lede",
+                  "fill": "$ink",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Small tools I built for my own problems. Some of them might fix yours.",
+                  "lineHeight": 1.35,
+                  "fontFamily": "$font-body",
+                  "fontSize": 20,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "frame",
+                  "id": "X9i0p",
+                  "name": "Accent Strip",
+                  "gap": 8,
+                  "children": [
+                    {
+                      "type": "rectangle",
+                      "id": "IJyw6",
+                      "name": "Swatch quadra",
+                      "fill": "$acc-quadra",
+                      "width": 32,
+                      "height": 8
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "VYKjY",
+                      "name": "Swatch maestro",
+                      "fill": "$acc-maestro",
+                      "width": 32,
+                      "height": 8
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "FjA3U",
+                      "name": "Swatch devflow",
+                      "fill": "$acc-devflow",
+                      "width": 32,
+                      "height": 8
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "O99ikk",
+                      "name": "Swatch datobar",
+                      "fill": "$acc-datobar",
+                      "width": 32,
+                      "height": 8
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "M6DYF6",
+                      "name": "Swatch condates",
+                      "fill": "$acc-condates",
+                      "width": 32,
+                      "height": 8
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "O0EWC",
+              "name": "Byline",
+              "fill": "$ink-dim",
+              "content": "by Matteo Papadopoulos · Firenze",
+              "fontFamily": "$font-mono",
+              "fontSize": 13,
+              "fontWeight": "normal",
+              "letterSpacing": 0.5
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "KBTIk",
+          "name": "Contraptions",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 72,
+          "padding": [
+            24,
+            0,
+            80,
+            0
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "yuRhe",
+              "name": "List Header",
+              "width": "fill_container",
+              "stroke": "$line",
+              "strokeWidth": {
+                "bottom": 1
+              },
+              "layout": "vertical",
+              "gap": 6,
+              "padding": [
+                0,
+                24,
+                12,
+                24
+              ],
+              "justifyContent": "space_between",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "D75iJN",
+                  "name": "List Title",
+                  "fill": "$ink-dim",
+                  "content": "THE CONTRAPTIONS",
+                  "fontFamily": "$font-mono",
+                  "fontSize": 13,
+                  "fontWeight": "normal",
+                  "letterSpacing": 0.5
+                },
+                {
+                  "type": "text",
+                  "id": "EX9ql",
+                  "name": "List Count",
+                  "fill": "$ink-dim",
+                  "content": "05 usable · 02 made for me",
+                  "fontFamily": "$font-mono",
+                  "fontSize": 13,
+                  "fontWeight": "normal",
+                  "letterSpacing": 0.5
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "nDTab",
+              "name": "Row Quadra",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 28,
+              "padding": [
+                0,
+                24
+              ],
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "sTRt9",
+                  "name": "Panel Quadra",
+                  "clip": true,
+                  "width": "fill_container",
+                  "height": 220,
+                  "fill": "$acc-quadra",
+                  "layout": "none",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "OZogf",
+                      "x": 20,
+                      "y": -18,
+                      "name": "Index",
+                      "fill": "#0A0A0A",
+                      "content": "01",
+                      "lineHeight": 1,
+                      "fontFamily": "$font-head",
+                      "fontSize": 140,
+                      "fontWeight": "800",
+                      "letterSpacing": -6
+                    },
+                    {
+                      "type": "text",
+                      "id": "X3nPz",
+                      "x": 20,
+                      "y": 190,
+                      "name": "Panel Label",
+                      "enabled": false,
+                      "fill": "#0A0A0A",
+                      "content": "[ screenshot / demo loop ]",
+                      "fontFamily": "$font-mono",
+                      "fontSize": 11,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "xvoY1",
+                      "x": 200,
+                      "y": 70,
+                      "name": "Mark Quadra",
+                      "width": 120,
+                      "height": 120,
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "assets/quadra-icon.png",
+                        "mode": "cover"
+                      },
+                      "cornerRadius": 28,
+                      "effect": {
+                        "type": "shadow",
+                        "shadowType": "outer",
+                        "color": "#00000055",
+                        "offset": {
+                          "x": 0,
+                          "y": 20
+                        },
+                        "blur": 50
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "TUijg",
+                  "name": "Text Quadra",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 14,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "CUg7O",
+                      "name": "Kind",
+                      "fill": "$acc-quadra",
+                      "content": "MACOS APP",
+                      "fontFamily": "$font-mono",
+                      "fontSize": 13,
+                      "fontWeight": "normal",
+                      "letterSpacing": 0.5
+                    },
+                    {
+                      "type": "text",
+                      "id": "XhoO9",
+                      "name": "Name",
+                      "fill": "$ink",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Quadra",
+                      "lineHeight": 1,
+                      "fontFamily": "$font-head",
+                      "fontSize": 40,
+                      "fontWeight": "700",
+                      "letterSpacing": -1
+                    },
+                    {
+                      "type": "text",
+                      "id": "fy536",
+                      "name": "One-liner",
+                      "fill": "$ink",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Straighten a crooked photo by drawing one line.",
+                      "lineHeight": 1.35,
+                      "fontFamily": "$font-body",
+                      "fontSize": 19,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "f7AbLQ",
+                      "name": "Why",
+                      "fill": "$ink-dim",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "My daughter needed to fix tilted pictures. Every app I found wanted a subscription for a two-second job, so I made one that doesn't.",
+                      "lineHeight": 1.6,
+                      "fontFamily": "$font-body",
+                      "fontSize": 16,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "L0NQxa",
+                      "name": "Meta Row",
+                      "width": "fill_container",
+                      "stroke": "$line",
+                      "strokeWidth": {
+                        "top": 1
+                      },
+                      "layout": "vertical",
+                      "gap": 8,
+                      "padding": [
+                        18,
+                        0,
+                        0,
+                        0
+                      ],
+                      "justifyContent": "space_between",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "RBnof",
+                          "name": "Meta",
+                          "fill": "$ink-dim",
+                          "content": "v0.6.0 · macOS · open source",
+                          "fontFamily": "$font-mono",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "KZyM1",
+                          "name": "Link",
+                          "fill": "$acc-quadra",
+                          "content": "github.com/spleenteo/quadra →",
+                          "fontFamily": "$font-mono",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "toSWe",
+              "name": "Row Maestro",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 28,
+              "padding": [
+                0,
+                24
+              ],
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "E2rre",
+                  "name": "Panel Maestro",
+                  "clip": true,
+                  "width": "fill_container",
+                  "height": 220,
+                  "fill": "$acc-maestro",
+                  "layout": "none",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "kG4vk",
+                      "x": 20,
+                      "y": -18,
+                      "name": "Index",
+                      "fill": "#0A0A0A",
+                      "content": "02",
+                      "lineHeight": 1,
+                      "fontFamily": "$font-head",
+                      "fontSize": 140,
+                      "fontWeight": "800",
+                      "letterSpacing": -6
+                    },
+                    {
+                      "type": "text",
+                      "id": "x4TuE",
+                      "x": 20,
+                      "y": 190,
+                      "name": "Panel Label",
+                      "enabled": false,
+                      "fill": "#0A0A0A",
+                      "content": "[ mark · to prepare in the repo ]",
+                      "fontFamily": "$font-mono",
+                      "fontSize": 11,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "uRuXI",
+                      "x": 200,
+                      "y": 70,
+                      "name": "Mark Maestro",
+                      "width": 120,
+                      "height": 120,
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "assets/maestro-icon-1024.png",
+                        "mode": "cover"
+                      },
+                      "cornerRadius": 28,
+                      "effect": {
+                        "type": "shadow",
+                        "shadowType": "outer",
+                        "color": "#00000055",
+                        "offset": {
+                          "x": 0,
+                          "y": 20
+                        },
+                        "blur": 50
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "Tp8tf",
+                  "name": "Text Maestro",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 14,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "VeJmW",
+                      "name": "Kind",
+                      "fill": "$acc-maestro",
+                      "content": "CLAUDE CODE PLUGIN",
+                      "fontFamily": "$font-mono",
+                      "fontSize": 13,
+                      "fontWeight": "normal",
+                      "letterSpacing": 0.5
+                    },
+                    {
+                      "type": "text",
+                      "id": "jlnEu",
+                      "name": "Name",
+                      "fill": "$ink",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Maestro",
+                      "lineHeight": 1,
+                      "fontFamily": "$font-head",
+                      "fontSize": 40,
+                      "fontWeight": "700",
+                      "letterSpacing": -1
+                    },
+                    {
+                      "type": "text",
+                      "id": "Z5lvi",
+                      "name": "One-liner",
+                      "fill": "$ink",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "A personal orchestrator for Claude Code, with a name, a memory and its own files.",
+                      "lineHeight": 1.35,
+                      "fontFamily": "$font-body",
+                      "fontSize": 19,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "YPjoB",
+                      "name": "Why",
+                      "fill": "$ink-dim",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "One assistant that remembers what happened, for real, locally.",
+                      "lineHeight": 1.6,
+                      "fontFamily": "$font-body",
+                      "fontSize": 16,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "bpb9m",
+                      "name": "Meta Row",
+                      "width": "fill_container",
+                      "stroke": "$line",
+                      "strokeWidth": {
+                        "top": 1
+                      },
+                      "layout": "vertical",
+                      "gap": 8,
+                      "padding": [
+                        18,
+                        0,
+                        0,
+                        0
+                      ],
+                      "justifyContent": "space_between",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "GVPSS",
+                          "name": "Meta",
+                          "fill": "$ink-dim",
+                          "content": "template + plugin · open source",
+                          "fontFamily": "$font-mono",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "z7aUH",
+                          "name": "Link",
+                          "fill": "$acc-maestro",
+                          "content": "github.com/spleenteo/maestro →",
+                          "fontFamily": "$font-mono",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "TSUCU",
+              "name": "Row devflow / projectflow",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 28,
+              "padding": [
+                0,
+                24
+              ],
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "Z4EzHI",
+                  "name": "Panel devflow / projectflow",
+                  "clip": true,
+                  "width": "fill_container",
+                  "height": 220,
+                  "fill": "$acc-devflow",
+                  "layout": "none",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "lqiGy",
+                      "x": 20,
+                      "y": -18,
+                      "name": "Index",
+                      "fill": "#0A0A0A",
+                      "content": "03",
+                      "lineHeight": 1,
+                      "fontFamily": "$font-head",
+                      "fontSize": 140,
+                      "fontWeight": "800",
+                      "letterSpacing": -6
+                    },
+                    {
+                      "type": "text",
+                      "id": "L2OPa",
+                      "x": 20,
+                      "y": 190,
+                      "name": "Panel Label",
+                      "fill": "#0A0A0A",
+                      "content": "[ mark · to prepare in the repo ]",
+                      "fontFamily": "$font-mono",
+                      "fontSize": 11,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "G4j7W",
+                  "name": "Text devflow / projectflow",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 14,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "b0nr4T",
+                      "name": "Kind",
+                      "fill": "$acc-devflow",
+                      "content": "CLAUDE CODE SKILLS",
+                      "fontFamily": "$font-mono",
+                      "fontSize": 13,
+                      "fontWeight": "normal",
+                      "letterSpacing": 0.5
+                    },
+                    {
+                      "type": "text",
+                      "id": "FYHwL",
+                      "name": "Name",
+                      "fill": "$ink",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "devflow / projectflow",
+                      "lineHeight": 1,
+                      "fontFamily": "$font-head",
+                      "fontSize": 40,
+                      "fontWeight": "700",
+                      "letterSpacing": -1
+                    },
+                    {
+                      "type": "text",
+                      "id": "tKLsN",
+                      "name": "One-liner",
+                      "fill": "$ink",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Take a piece of work from idea to done, one small slice at a time.",
+                      "lineHeight": 1.35,
+                      "fontFamily": "$font-body",
+                      "fontSize": 19,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "exMtC",
+                      "name": "Why",
+                      "fill": "$ink-dim",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Brainstorming, framing, shaping and planning: devflow for code, projectflow for life projects. Both keep the thread on disk between sessions.",
+                      "lineHeight": 1.6,
+                      "fontFamily": "$font-body",
+                      "fontSize": 16,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "rsZOP",
+                      "name": "Meta Row",
+                      "width": "fill_container",
+                      "stroke": "$line",
+                      "strokeWidth": {
+                        "top": 1
+                      },
+                      "layout": "vertical",
+                      "gap": 8,
+                      "padding": [
+                        18,
+                        0,
+                        0,
+                        0
+                      ],
+                      "justifyContent": "space_between",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "HXMkK",
+                          "name": "Meta",
+                          "fill": "$ink-dim",
+                          "content": "skills · open source",
+                          "fontFamily": "$font-mono",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "Q4CQq4",
+                          "name": "Link",
+                          "fill": "$acc-devflow",
+                          "content": "github.com/spleenteo/devflow →",
+                          "fontFamily": "$font-mono",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "QanNs",
+              "name": "Row Dato bar",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 28,
+              "padding": [
+                0,
+                24
+              ],
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "TuAX9",
+                  "name": "Panel Dato bar",
+                  "clip": true,
+                  "width": "fill_container",
+                  "height": 220,
+                  "fill": "$acc-datobar",
+                  "layout": "none",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "N3Zdj8",
+                      "x": 20,
+                      "y": -18,
+                      "name": "Index",
+                      "fill": "#0A0A0A",
+                      "content": "04",
+                      "lineHeight": 1,
+                      "fontFamily": "$font-head",
+                      "fontSize": 140,
+                      "fontWeight": "800",
+                      "letterSpacing": -6
+                    },
+                    {
+                      "type": "text",
+                      "id": "VT1tF",
+                      "x": 20,
+                      "y": 190,
+                      "name": "Panel Label",
+                      "fill": "#0A0A0A",
+                      "content": "[ mark · to prepare in the repo ]",
+                      "fontFamily": "$font-mono",
+                      "fontSize": 11,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "c5yrI2",
+                  "name": "Text Dato bar",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 14,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "vaMY8",
+                      "name": "Kind",
+                      "fill": "$acc-datobar",
+                      "content": "NPM PACKAGE",
+                      "fontFamily": "$font-mono",
+                      "fontSize": 13,
+                      "fontWeight": "normal",
+                      "letterSpacing": 0.5
+                    },
+                    {
+                      "type": "text",
+                      "id": "VF0GG",
+                      "name": "Name",
+                      "fill": "$ink",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Dato bar",
+                      "lineHeight": 1,
+                      "fontFamily": "$font-head",
+                      "fontSize": 40,
+                      "fontWeight": "700",
+                      "letterSpacing": -1
+                    },
+                    {
+                      "type": "text",
+                      "id": "La78h",
+                      "name": "One-liner",
+                      "fill": "$ink",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "A local dev bar for DatoCMS sites: drafts, published content and visual editing in one click.",
+                      "lineHeight": 1.35,
+                      "fontFamily": "$font-body",
+                      "fontSize": 19,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "QGCWW",
+                      "name": "Why",
+                      "fill": "$ink-dim",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "I kept rebuilding the same toggles in every project. Now it's one package that works in any framework.",
+                      "lineHeight": 1.6,
+                      "fontFamily": "$font-body",
+                      "fontSize": 16,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "gXV8W",
+                      "name": "Meta Row",
+                      "width": "fill_container",
+                      "stroke": "$line",
+                      "strokeWidth": {
+                        "top": 1
+                      },
+                      "layout": "vertical",
+                      "gap": 8,
+                      "padding": [
+                        18,
+                        0,
+                        0,
+                        0
+                      ],
+                      "justifyContent": "space_between",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "x2UiS0",
+                          "name": "Meta",
+                          "fill": "$ink-dim",
+                          "content": "v0.1.0 · npm",
+                          "fontFamily": "$font-mono",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "v8PfO",
+                          "name": "Link",
+                          "fill": "$acc-datobar",
+                          "content": "github.com/spleenteo/datocms-dev-bar →",
+                          "fontFamily": "$font-mono",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "HxAbX",
+              "name": "Row Condates",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 28,
+              "padding": [
+                0,
+                24
+              ],
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "j9QnGe",
+                  "name": "Panel Condates",
+                  "clip": true,
+                  "width": "fill_container",
+                  "height": 220,
+                  "fill": "$acc-condates",
+                  "layout": "none",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "pstTt",
+                      "x": 20,
+                      "y": -18,
+                      "name": "Index",
+                      "fill": "#0A0A0A",
+                      "content": "05",
+                      "lineHeight": 1,
+                      "fontFamily": "$font-head",
+                      "fontSize": 140,
+                      "fontWeight": "800",
+                      "letterSpacing": -6
+                    },
+                    {
+                      "type": "text",
+                      "id": "gnFWX",
+                      "x": 20,
+                      "y": 190,
+                      "name": "Panel Label",
+                      "fill": "#0A0A0A",
+                      "content": "[ mark · to prepare in the repo ]",
+                      "fontFamily": "$font-mono",
+                      "fontSize": 11,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "xZ47N",
+                  "name": "Text Condates",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 14,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "kk1Kf",
+                      "name": "Kind",
+                      "fill": "$acc-condates",
+                      "content": "DATOCMS PLUGIN",
+                      "fontFamily": "$font-mono",
+                      "fontSize": 13,
+                      "fontWeight": "normal",
+                      "letterSpacing": 0.5
+                    },
+                    {
+                      "type": "text",
+                      "id": "ZNU0V",
+                      "name": "Name",
+                      "fill": "$ink",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Condates",
+                      "lineHeight": 1,
+                      "fontFamily": "$font-head",
+                      "fontSize": 40,
+                      "fontWeight": "700",
+                      "letterSpacing": -1
+                    },
+                    {
+                      "type": "text",
+                      "id": "UWaxI",
+                      "name": "One-liner",
+                      "fill": "$ink",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Dates you only half know: a year, a month, or the full day.",
+                      "lineHeight": 1.35,
+                      "fontFamily": "$font-body",
+                      "fontSize": 19,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "l2370",
+                      "name": "Why",
+                      "fill": "$ink-dim",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "History rarely comes with exact dates. This lets editors say so instead of inventing a day.",
+                      "lineHeight": 1.6,
+                      "fontFamily": "$font-body",
+                      "fontSize": 16,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "b5OZC",
+                      "name": "Meta Row",
+                      "width": "fill_container",
+                      "stroke": "$line",
+                      "strokeWidth": {
+                        "top": 1
+                      },
+                      "layout": "vertical",
+                      "gap": 8,
+                      "padding": [
+                        18,
+                        0,
+                        0,
+                        0
+                      ],
+                      "justifyContent": "space_between",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "V8vkF",
+                          "name": "Meta",
+                          "fill": "$ink-dim",
+                          "content": "v0.1.1 · DatoCMS marketplace",
+                          "fontFamily": "$font-mono",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "RQWpp",
+                          "name": "Link",
+                          "fill": "$acc-condates",
+                          "content": "datocms.com/marketplace →",
+                          "fontFamily": "$font-mono",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "JcON6",
+          "name": "Made For Me",
+          "width": "fill_container",
+          "layout": "vertical",
+          "padding": [
+            0,
+            24,
+            80,
+            24
+          ],
+          "children": [
+            {
+              "type": "text",
+              "id": "tsjYB",
+              "name": "MFM Title",
+              "fill": "$ink-dim",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "MADE FOR ME · NOT FOR SALE, NOT FOR SIGN-UP",
+              "lineHeight": 1.5,
+              "fontFamily": "$font-mono",
+              "fontSize": 13,
+              "fontWeight": "normal",
+              "letterSpacing": 0.5
+            },
+            {
+              "type": "frame",
+              "id": "cZFKl",
+              "name": "MFM Spacer",
+              "width": "fill_container",
+              "height": 24
+            },
+            {
+              "type": "frame",
+              "id": "R1teEA",
+              "name": "MFM Slacky",
+              "width": "fill_container",
+              "stroke": "$line",
+              "strokeWidth": {
+                "top": 1
+              },
+              "layout": "vertical",
+              "gap": 8,
+              "padding": [
+                20,
+                0
+              ],
+              "children": [
+                {
+                  "type": "rectangle",
+                  "cornerRadius": 7,
+                  "id": "QMJYI",
+                  "name": "Dot Slacky",
+                  "fill": {
+                    "type": "image",
+                    "enabled": true,
+                    "url": "assets/slacky-icon.png",
+                    "mode": "cover"
+                  },
+                  "width": 28,
+                  "height": 28
+                },
+                {
+                  "type": "text",
+                  "id": "kfsCz",
+                  "name": "MFM Name Slacky",
+                  "fill": "$ink",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Slacky",
+                  "fontFamily": "$font-head",
+                  "fontSize": 26,
+                  "fontWeight": "700",
+                  "letterSpacing": -1
+                },
+                {
+                  "type": "text",
+                  "id": "y3zVSF",
+                  "name": "MFM Desc Slacky",
+                  "fill": "$ink-dim",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "A task manager that notices when I procrastinate and says so. Private, runs my week.",
+                  "lineHeight": 1.5,
+                  "fontFamily": "$font-body",
+                  "fontSize": 16,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "H6v3n",
+              "name": "MFM Trama",
+              "width": "fill_container",
+              "stroke": "$line",
+              "strokeWidth": {
+                "top": 1
+              },
+              "layout": "vertical",
+              "gap": 8,
+              "padding": [
+                20,
+                0
+              ],
+              "children": [
+                {
+                  "type": "rectangle",
+                  "cornerRadius": 7,
+                  "id": "cSnYw",
+                  "name": "Dot Trama",
+                  "fill": "#2EE59D",
+                  "width": 28,
+                  "height": 28
+                },
+                {
+                  "type": "text",
+                  "id": "v6eQ4",
+                  "name": "MFM Name Trama",
+                  "fill": "$ink",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Trama",
+                  "fontFamily": "$font-head",
+                  "fontSize": 26,
+                  "fontWeight": "700",
+                  "letterSpacing": -1
+                },
+                {
+                  "type": "text",
+                  "id": "MeHM4",
+                  "name": "MFM Desc Trama",
+                  "fill": "$ink-dim",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Hierarchical timelines of historical processes, built on DatoCMS.",
+                  "lineHeight": 1.5,
+                  "fontFamily": "$font-body",
+                  "fontSize": 16,
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "jdOq7",
+          "name": "Slot Wrap",
+          "width": "fill_container",
+          "padding": [
+            0,
+            24,
+            80,
+            24
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "qDakr",
+              "name": "Slot — next experiment (empty)",
+              "width": "fill_container",
+              "cornerRadius": 2,
+              "stroke": "#3A3A3A",
+              "strokeWidth": 1,
+              "layout": "vertical",
+              "gap": 14,
+              "padding": 28,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "TWX0b",
+                  "name": "Slot Kicker",
+                  "fill": "$ink-dim",
+                  "content": "RESERVED · NEXT EXPERIMENT",
+                  "fontFamily": "$font-mono",
+                  "fontSize": 13,
+                  "fontWeight": "normal",
+                  "letterSpacing": 0.5
+                },
+                {
+                  "type": "text",
+                  "id": "K34Kk",
+                  "name": "Slot Note",
+                  "fill": "$ink-dim",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Empty on purpose. Something here will ask for more than a click.",
+                  "lineHeight": 1.4,
+                  "fontFamily": "$font-body",
+                  "fontSize": 18,
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "r8eQGw",
+          "name": "About",
+          "width": "fill_container",
+          "fill": "$bg-raised",
+          "layout": "vertical",
+          "gap": 20,
+          "padding": [
+            72,
+            24
+          ],
+          "children": [
+            {
+              "type": "text",
+              "id": "cXiut",
+              "name": "About Kicker",
+              "fill": "$ink-dim",
+              "textGrowth": "fixed-width",
+              "width": 260,
+              "content": "ABOUT",
+              "fontFamily": "$font-mono",
+              "fontSize": 13,
+              "fontWeight": "normal",
+              "letterSpacing": 0.5
+            },
+            {
+              "type": "frame",
+              "id": "zas4b",
+              "name": "About Body",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 32,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "JQnmi",
+                  "name": "About Text",
+                  "fill": "$ink",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Ciao, I'm Matteo. I've been making things for the web for about thirty years. By day I run the partner program at DatoCMS; these are the side projects I play with, pairing my skills with Claude Code.",
+                  "lineHeight": 1.45,
+                  "fontFamily": "$font-body",
+                  "fontSize": 20,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "frame",
+                  "id": "IgYfX",
+                  "name": "Contacts",
+                  "layout": "vertical",
+                  "gap": 12,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "WKxd9",
+                      "name": "Contact hello@spleenteo.com",
+                      "fill": "$ink",
+                      "content": "ciao@spleenteo.com →",
+                      "fontFamily": "$font-mono",
+                      "fontSize": 15,
+                      "fontWeight": "normal",
+                      "letterSpacing": 0.5
+                    },
+                    {
+                      "type": "text",
+                      "id": "T7isR",
+                      "name": "Contact github.com/spleenteo",
+                      "fill": "$ink",
+                      "content": "github.com/spleenteo →",
+                      "fontFamily": "$font-mono",
+                      "fontSize": 15,
+                      "fontWeight": "normal",
+                      "letterSpacing": 0.5
+                    },
+                    {
+                      "type": "text",
+                      "id": "mQ9ts",
+                      "x": 0,
+                      "y": 60,
+                      "name": "Contact x.com/spleenteo",
+                      "enabled": false,
+                      "fill": "$ink",
+                      "content": "x.com/spleenteo →",
+                      "fontFamily": "$font-mono",
+                      "fontSize": 15,
+                      "fontWeight": "normal",
+                      "letterSpacing": 0.5
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "xZuvi",
+          "name": "Footer",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 8,
+          "padding": [
+            28,
+            24
+          ],
+          "justifyContent": "space_between",
+          "children": [
+            {
+              "type": "text",
+              "id": "ceUwH",
+              "name": "Foot L",
+              "fill": "$ink-dim",
+              "content": "spleenteo · Firenze",
+              "fontFamily": "$font-mono",
+              "fontSize": 13,
+              "fontWeight": "normal",
+              "letterSpacing": 0.5
+            },
+            {
+              "type": "text",
+              "id": "PXTO8",
+              "name": "Foot R",
+              "fill": "$ink-dim",
+              "content": "© 2026 Matteo Papadopoulos",
+              "fontFamily": "$font-mono",
+              "fontSize": 13,
+              "fontWeight": "normal",
+              "letterSpacing": 0.5
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "variables": {
+    "bg": {
+      "type": "color",
+      "value": "#0A0A0A"
+    },
+    "bg-raised": {
+      "type": "color",
+      "value": "#141414"
+    },
+    "ink": {
+      "type": "color",
+      "value": "#F2F0EB"
+    },
+    "ink-dim": {
+      "type": "color",
+      "value": "#9A978F"
+    },
+    "line": {
+      "type": "color",
+      "value": "#2A2A2A"
+    },
+    "font-head": {
+      "type": "string",
+      "value": "Bricolage Grotesque"
+    },
+    "font-body": {
+      "type": "string",
+      "value": "Instrument Sans"
+    },
+    "font-mono": {
+      "type": "string",
+      "value": "Fragment Mono"
+    },
+    "acc-quadra": {
+      "type": "color",
+      "value": "#2F7BFF"
+    },
+    "acc-maestro": {
+      "type": "color",
+      "value": "#FFB000"
+    },
+    "acc-devflow": {
+      "type": "color",
+      "value": "#C6FF3D"
+    },
+    "acc-datobar": {
+      "type": "color",
+      "value": "#FF3D8B"
+    },
+    "acc-condates": {
+      "type": "color",
+      "value": "#9D7BFF"
+    }
+  },
+  "fileToken": "990b9c9f-8d61-4510-8328-6e9559142cf7"
+}
