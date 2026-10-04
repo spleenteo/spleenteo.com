@@ -1,0 +1,73 @@
+---
+import { about } from '../data/site';
+---
+
+<section id="about" class="about">
+  <h2 class="mono-label kicker">{about.kicker}</h2>
+  <div class="body">
+    <p class="text">{about.text}</p>
+    <ul class="contacts">
+      {about.contacts.map((c) => (
+        <li><a href={c.href}>{c.label}</a></li>
+      ))}
+    </ul>
+  </div>
+</section>
+
+<style>
+  .about {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 72px var(--gutter);
+    background: var(--bg-raised);
+  }
+  .kicker {
+    font-weight: 400;
+  }
+  .body {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+  .text {
+    color: var(--ink);
+    font-size: 20px;
+    line-height: 1.45;
+    max-width: 820px;
+  }
+  .contacts {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .contacts a {
+    font-family: var(--font-mono);
+    font-size: 15px;
+    letter-spacing: 0.5px;
+    color: var(--ink);
+    text-decoration: none;
+    overflow-wrap: anywhere;
+  }
+  @media (min-width: 960px) {
+    .about {
+      flex-direction: row;
+      gap: 96px;
+      padding: 120px var(--gutter);
+    }
+    .kicker {
+      width: 260px;
+      flex: none;
+    }
+    .text {
+      font-size: 26px;
+    }
+    .contacts {
+      flex-direction: row;
+      gap: 40px;
+    }
+  }
+</style>

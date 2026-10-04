@@ -2,11 +2,32 @@
 import Base from '../layouts/Base.astro';
 import Nav from '../components/Nav.astro';
 import Hero from '../components/Hero.astro';
+import ListHeader from '../components/ListHeader.astro';
+import About from '../components/About.astro';
+import Footer from '../components/Footer.astro';
 ---
 
 <Base>
   <Nav />
   <main>
     <Hero />
+    <section id="contraptions" class="contraptions">
+      <ListHeader />
+      <!-- V2: the five contraption rows go here, after ListHeader. -->
+    </section>
+    <!-- V2: "Made for me" and "Slot" sections go here, between Contraptions and About. -->
+    <About />
   </main>
+  <Footer />
 </Base>
+
+<style>
+  .contraptions {
+    padding-top: 24px;
+  }
+  @media (min-width: 960px) {
+    .contraptions {
+      padding-top: 40px;
+    }
+  }
+</style>

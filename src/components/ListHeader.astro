@@ -1,0 +1,29 @@
+---
+import { listHeader } from '../data/site';
+---
+
+<div class="list-header">
+  <h2 class="mono-label">{listHeader.title}</h2>
+  <p class="mono-label">{listHeader.count}</p>
+</div>
+
+<style>
+  .list-header {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    padding: 0 var(--gutter) 12px;
+    border-bottom: 1px solid var(--line);
+  }
+  h2 {
+    font-weight: 400;
+  }
+  @media (min-width: 960px) {
+    .list-header {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: baseline;
+      padding-bottom: 16px;
+    }
+  }
+</style>
