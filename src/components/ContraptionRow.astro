@@ -1,0 +1,134 @@
+---
+import Panel from './Panel.astro';
+import type { Contraption } from '../data/site';
+
+interface Props {
+  item: Contraption;
+  side: 'left' | 'right';
+}
+
+const { item, side } = Astro.props;
+---
+
+<article class:list={['row', `row-${side}`]} style={`--accent: var(--acc-${item.accent})`}>
+  <Panel index={item.index} accent={item.accent} mark={item.mark} name={item.name} side={side} />
+  <div class="text">
+    <p class="kind">{item.kind}</p>
+    <h3 class="name">{item.name}</h3>
+    <p class="one-liner">{item.oneLiner}</p>
+    <p class="why">{item.why}</p>
+    <div class="meta-row">
+      <p class="meta">{item.meta}</p>
+      <p class="links">
+        <a href={item.href}>{item.linkLabel}</a>
+        {item.repo && <a href={item.repo}>repo →</a>}
+      </p>
+    </div>
+  </div>
+</article>
+
+<style>
+  .row {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+  }
+  .text {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    padding: 0 var(--gutter);
+  }
+  .kind,
+  .meta,
+  .links {
+    font-family: var(--font-mono);
+    font-size: 13px;
+  }
+  .kind {
+    letter-spacing: 0.5px;
+    color: var(--accent);
+  }
+  .name {
+    font-family: var(--font-head);
+    font-weight: 700;
+    font-size: 40px;
+    letter-spacing: -1px;
+    line-height: 1;
+    color: var(--ink);
+    overflow-wrap: anywhere;
+  }
+  .one-liner {
+    font-size: 19px;
+    line-height: 1.35;
+    color: var(--ink);
+  }
+  .why {
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--ink-dim);
+  }
+  .meta-row {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    border-top: 1px solid var(--line);
+    padding-top: 18px;
+  }
+  .meta {
+    color: var(--ink-dim);
+    overflow-wrap: anywhere;
+  }
+  .links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px 16px;
+    color: var(--accent);
+  }
+  .links a {
+    overflow-wrap: anywhere;
+  }
+  @media (min-width: 960px) {
+    .row {
+      display: block;
+      position: relative;
+      height: calc(660 * var(--k));
+    }
+    .text {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      gap: 22px;
+      padding: 0;
+      --edge: max(0px, calc((100vw - 1440px) / 2));
+    }
+    .row-left .text {
+      left: calc(811 * var(--k) + var(--edge));
+      width: min(565px, calc(100vw - 811 * var(--k) - 64px - var(--edge)));
+    }
+    .row-right .text {
+      left: calc(64px + var(--edge));
+      width: min(565px, calc(100vw - 715 * var(--k) - 48px - 64px - var(--edge)));
+    }
+    .name {
+      font-size: 64px;
+      letter-spacing: -2px;
+    }
+    .one-liner {
+      font-size: 24px;
+    }
+    .why {
+      font-size: 17px;
+    }
+    .meta-row {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 8px 24px;
+    }
+    .links {
+      justify-content: flex-end;
+      text-align: right;
+    }
+  }
+</style>

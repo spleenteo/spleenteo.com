@@ -3,6 +3,8 @@ import Base from '../layouts/Base.astro';
 import Nav from '../components/Nav.astro';
 import Hero from '../components/Hero.astro';
 import ListHeader from '../components/ListHeader.astro';
+import ContraptionRow from '../components/ContraptionRow.astro';
+import { contraptions } from '../data/site';
 import About from '../components/About.astro';
 import Footer from '../components/Footer.astro';
 ---
@@ -13,7 +15,9 @@ import Footer from '../components/Footer.astro';
     <Hero />
     <section id="contraptions" class="contraptions">
       <ListHeader />
-      <!-- V2: the five contraption rows go here, after ListHeader. -->
+      <div class="rows">
+        {contraptions.map((item, i) => <ContraptionRow item={item} side={i % 2 === 0 ? 'left' : 'right'} />)}
+      </div>
     </section>
     <!-- V2: "Made for me" and "Slot" sections go here, between Contraptions and About. -->
     <About />
@@ -23,11 +27,23 @@ import Footer from '../components/Footer.astro';
 
 <style>
   .contraptions {
-    padding-top: 24px;
+    padding: 24px 0 80px;
+    --k: 1px;
+  }
+  .rows {
+    display: flex;
+    flex-direction: column;
+    gap: 72px;
+    margin-top: 72px;
   }
   @media (min-width: 960px) {
     .contraptions {
-      padding-top: 40px;
+      --k: calc(min(100vw, 1440px) / 1440);
+      padding: 40px 0 calc(160 * var(--k));
+    }
+    .rows {
+      gap: calc(140 * var(--k));
+      margin-top: calc(140 * var(--k));
     }
   }
 </style>

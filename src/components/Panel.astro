@@ -1,0 +1,103 @@
+---
+import { Image } from 'astro:assets';
+import quadra from '../../design/assets/quadra-icon.png';
+import maestro from '../../design/assets/maestro-icon-1024.png';
+import type { Accent, Mark } from '../data/site';
+
+interface Props {
+  index: string;
+  accent: Accent;
+  mark?: Mark;
+  name: string;
+  side: 'left' | 'right';
+}
+
+const { index, accent, mark, name, side } = Astro.props;
+const marks = { quadra, maestro };
+---
+
+<div class:list={['panel', `panel-${side}`, mark && `mark-${mark}`]} style={`--accent: var(--acc-${accent})`}>
+  <span class="index">{index}</span>
+  {
+    mark && (
+      <Image
+        class="mark"
+        src={marks[mark]}
+        alt={`${name} icon`}
+        width={240}
+        densities={[1, 2]}
+      />
+    )
+  }
+</div>
+
+<style>
+  .panel {
+    position: relative;
+    width: 100%;
+    height: 220px;
+    background: var(--accent);
+    overflow: hidden;
+  }
+  .index {
+    position: absolute;
+    left: 20px;
+    top: -18px;
+    font-family: var(--font-head);
+    font-weight: 800;
+    font-size: 140px;
+    letter-spacing: -6px;
+    line-height: 1;
+    color: var(--on-accent);
+  }
+  .mark {
+    position: absolute;
+    right: 22px;
+    top: 70px;
+    width: min(120px, 34vw);
+    height: min(120px, 34vw);
+    border-radius: 28px;
+    box-shadow: 0 20px 50px #00000055;
+  }
+  @media (min-width: 960px) {
+    .panel {
+      position: absolute;
+      top: calc(80 * var(--k));
+      width: calc(780 * var(--k));
+      height: calc(500 * var(--k));
+    }
+    .panel-left {
+      left: calc(-102.5 * var(--k));
+      transform: rotate(-10deg);
+    }
+    .panel-right {
+      right: calc(-102.5 * var(--k));
+      transform: rotate(10deg);
+    }
+    .index {
+      top: calc(-40 * var(--k));
+      font-size: calc(300 * var(--k));
+      letter-spacing: -0.047em;
+    }
+    .panel-left .index {
+      left: calc(190 * var(--k));
+    }
+    .panel-right .index {
+      left: calc(300 * var(--k));
+    }
+    .mark {
+      right: auto;
+      width: calc(240 * var(--k));
+      height: calc(240 * var(--k));
+      border-radius: calc(54 * var(--k));
+    }
+    .mark-quadra .mark {
+      left: calc(480 * var(--k));
+      top: calc(200 * var(--k));
+    }
+    .mark-maestro .mark {
+      left: calc(70 * var(--k));
+      top: calc(220 * var(--k));
+    }
+  }
+</style>
