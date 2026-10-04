@@ -79,4 +79,9 @@ What execution showed:
 
 **Done**: `curl -I https://spleenteo.com` answers 200 with the Astro page. The page in the browser matches the local build.
 
-**Gotchas**: existing DNS records or routes on spleenteo.com (an old site?) to check with `cf` before binding. `www.spleenteo.com`: to be decided with the user.
+**Gotchas**: existing DNS records or routes on spleenteo.com (an old site?) to check with `cf` before binding. `www.spleenteo.com`: a 301 redirect to the apex (the user's decision, 2026-10-04).
+
+### Deviations found while planning V3
+
+- `cf` doesn't build Astro 7 (beta). Deploy from a `deploy/` subfolder that publishes `../dist` (see `spike-cf-deploy.md`), instead of a `wrangler.jsonc` at the root.
+- The `www` redirect isn't in the original mandate. It was added by the user's decision.

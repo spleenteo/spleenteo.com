@@ -2,7 +2,7 @@
 status: open
 phase: slice
 slice: V3
-step: plan
+step: execute
 work: hub
 stack: astro
 updated: 2026-10-04
