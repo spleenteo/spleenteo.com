@@ -10,7 +10,9 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "check": "astro check"
+    "check": "astro check",
+    "deploy:check": ": \"${CLOUDFLARE_ACCOUNT_ID:?CLOUDFLARE_ACCOUNT_ID is not set}\" && npm run build && cd deploy && ./node_modules/.bin/cf deploy --dry-run",
+    "deploy": ": \"${CLOUDFLARE_ACCOUNT_ID:?CLOUDFLARE_ACCOUNT_ID is not set}\" && [ \"$CONFIRM_DEPLOY\" = 1 ] || { echo 'Refusing to publish: set CONFIRM_DEPLOY=1' >&2; exit 1; } && npm run build && cd deploy && ./node_modules/.bin/cf deploy"
   },
   "dependencies": {
     "@astrojs/check": "^0.9.10",
