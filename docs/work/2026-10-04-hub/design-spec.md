@@ -102,7 +102,11 @@ Desktop side gutter 64px, mobile 24px.
 
 The design only has 390 and 1440. In between it's our call: switch from the mobile layout to the desktop one around 960px, and scale the large type with `clamp()` so it never overflows. Documented in the V1 plan.
 
-## Open points (to settle in the V2 plan)
+## Open points: settled by the user on 2026-10-04
+
+Decisions: 1, no label on Quadra either. 2, main link plus a second link "repo →" where a repo exists, with the label = the main address without `https://`. Condates is shortened to `datocms.com/marketplace →`. 3, no x.com.
+
+Original text:
 
 1. **Quadra label**: in the design Quadra has a mark and also the label "[ screenshot / demo loop ]", a placeholder. Proposal: don't render it either.
 2. **Link labels**: the design shows `github.com/spleenteo/<name> →`. For Quadra and Maestro, `copy.md` has the github.io page as the main link and the repo in parentheses. Proposal: the `href` is the main link and the label shows that same address, without `https://`.

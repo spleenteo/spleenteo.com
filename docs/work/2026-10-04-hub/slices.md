@@ -43,6 +43,12 @@ What execution showed:
 
 **Gotchas**: Nav at 390 wraps onto two lines (the design has one line): reduce the gap or the brand size to keep it on one line from 390 up, if it fits with the real font. The Condates link label is very long, so it must wrap (`overflow-wrap: anywhere`) or be shortened according to open point 2. Rotation plus overflow: `overflow: hidden` on `body` breaks `position: sticky` and anchors; prefer `overflow-x: clip` on a wrapper. The three open points at the end of `design-spec.md`.
 
+### Deviations found while planning V2
+
+- **Repo links.** The Done asks for every link in `copy.md` to be clickable. Quadra, Maestro and Condates have a repo URL in parentheses besides the main link, and the design shows only one link per card. The plan adds a second link, "repo →", to the Meta Row. To be confirmed by the user (open point 2).
+- **Widths other than 1440.** The design doesn't say how the bleeding panels behave between 960 and 1440 or above 1440. The plan defines a scale unit `--k` (geometry proportional up to 1440), with the panels always on the viewport edges and the text in a centred 1440 container.
+- **Contrast** computed during planning: every accent passes AA on `#0A0A0A`, the lowest being Quadra at 5.09.
+
 ## V3 — Deploy on Cloudflare Workers, spleenteo.com
 
 **In**: `wrangler.jsonc` with static assets (`assets.directory: ./dist`, no Worker script unless needed). Deploy to `*.workers.dev` as a preview. Custom domain `spleenteo.com` (zone already on Cloudflare) via `cf` CLI or Cloudflare MCP. Before the production deploy and the domain binding: **stop for the user's confirmation**. Check for existing DNS records on the zone that would conflict.
