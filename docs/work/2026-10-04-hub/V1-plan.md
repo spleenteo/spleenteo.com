@@ -23,7 +23,7 @@
 
 ## Review focus
 
-1. Hero title at every width. "Contraptions" is about 5.4× its font size wide, and at 64px it is already 346px against 342 available at 390. Two clamps: mobile `clamp(44px, 16vw, 64px)` (deliberately ≤ 64px, as in the spec); desktop (≥ 960) `clamp(64px, 12.8vw, 184px)`. Letter-spacing in `em` (−0.033em). Check at 320, 390, 960 and 1100 for no overflow, and don't count on `clip` to hide one.
+1. Hero title at every width. "Contraptions" is about 5.4× its font size wide, and at 64px it is already 346px against 342 available at 390. Two clamps: mobile `clamp(44px, 15vw, 64px)` (deliberately ≤ 64px, as in the spec); desktop (≥ 960) `clamp(64px, 12.8vw, 184px)`. Letter-spacing in `em` (−0.033em). Check at 320, 390, 960 and 1100 for no overflow, and don't count on `clip` to hide one.
 2. 320px width: the hero title (see 1) and the Nav (brand + three links at gap 16) must not overflow. Allow the links to wrap or shrink the gap; check with no horizontal scroll.
 3. Fonts not loaded yet or blocked: the fallback stacks (`system-ui, sans-serif` and `ui-monospace, monospace`) keep the layout readable.
 4. Anchors `#contraptions` and `#about` land on the right sections (ids present, no sticky offset needed).
