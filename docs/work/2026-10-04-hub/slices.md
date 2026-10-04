@@ -85,3 +85,18 @@ What execution showed:
 
 - `cf` doesn't build Astro 7 (beta). Deploy from a `deploy/` subfolder that publishes `../dist` (see `spike-cf-deploy.md`), instead of a `wrangler.jsonc` at the root.
 - The `www` redirect isn't in the original mandate. It was added by the user's decision.
+
+### V3 — done on 2026-10-04
+
+The user approved the preview and the production domain in a single message. `https://spleenteo.com` answers `HTTP/2 200`, `content-type: text/html`, and the HTML served is byte-for-byte the same as the local `dist/index.html`. The viewport check at 390 and 1440 gives the same rects as the V2 close, and all 10 links are present. The preview `spleenteo-com.<subdomain>.workers.dev` stays active (`workersDev: true`).
+
+How it's published:
+- `npm run deploy` (with `CLOUDFLARE_ACCOUNT_ID` in the environment and `CONFIRM_DEPLOY=1`) builds Astro at the root, then `deploy/` runs `cf deploy`, which hands the upload of `../dist` to Wrangler. The assets-only Worker `spleenteo-com` uses the custom domain `spleenteo.com` (`domains` in `deploy/cloudflare.config.ts`).
+- **www → apex**, done through MCP and not described in the repo: on the zone, a proxied `AAAA 100::` record for `www` plus a Single Redirect rule (phase `http_request_dynamic_redirect`) that sends `www.spleenteo.com` to `https://spleenteo.com` plus the path, with a 301 that keeps the query string. Checked on https and http.
+- DNS after the binding: compared with the snapshot, the only additions are `AAAA spleenteo.com` (proxied, from the custom domain) and `AAAA www`. MX, SPF and DKIM are unchanged, and Email Routing stays `enabled/ready`.
+
+What execution showed:
+- The first `http://www` request returned 523 right after the rule was created, then 301 on the next attempt: that was propagation. Don't judge the first response.
+- `http://spleenteo.com` serves the page over plain HTTP: the zone's "Always Use HTTPS" setting is `off`. This is out of the mandate and is flagged to the user.
+- The zone redirect and the `www` record live only in the Cloudflare account. Whoever rebuilds the zone from scratch has to recreate them by hand (this note is the record).
+

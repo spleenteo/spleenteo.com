@@ -8,3 +8,7 @@
 - In specs, "full width" is ambiguous: always write the containing box (e.g. "inside the gutters, x=24, width 342 at 390").
 - Before a full-page screenshot, scroll to the bottom and back: `loading="lazy"` images otherwise stay empty.
 - With the page under `overflow-x: clip`, `scrollWidth === innerWidth` proves nothing about bleeds or overlaps: check them with `getBoundingClientRect`.
+- `cf` (beta) doesn't build Astro 6+: publish the static `dist/` from a subfolder with its own `cloudflare.config.ts` + `wrangler.config.ts` (`assetsDirectory`).
+- npm scripts only put the root `node_modules/.bin` on the PATH: after a `cd`, call the binary by its path (`./node_modules/.bin/cf`).
+- Never write account/zone IDs into documents or config: environment variables at run time.
+- Right after creating DNS records or redirect rules, the first response can be a 5xx (propagation): retry before concluding.
