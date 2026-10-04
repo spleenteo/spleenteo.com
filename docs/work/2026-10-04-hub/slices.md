@@ -49,6 +49,28 @@ What execution showed:
 - **Widths other than 1440.** The design doesn't say how the bleeding panels behave between 960 and 1440 or above 1440. The plan defines a scale unit `--k` (geometry proportional up to 1440), with the panels always on the viewport edges and the text in a centred 1440 container.
 - **Contrast** computed during planning: every accent passes AA on `#0A0A0A`, the lowest being Quadra at 5.09.
 
+### V2 — done on 2026-10-04
+
+Gate green. The local build shows the five cards, Made for me (Slacky with the `[CHECK]` left as is, Trama), the empty slot, and About with ciao@spleenteo.com. All 10 links in `copy.md` are `href`s in `dist/index.html`. No Panel Label. In headless Chrome at 320, 390, 960, 1440 and 1920, `scrollWidth` equals the viewport. At 1440 the panels bleed exactly 140px (−140..715 and 725..1580) and the text starts at 811 or 64, as on the board. Above 1440 the panels stay on the viewport edges and the text follows the centred container.
+
+Text contrast on the accents (WCAG 2.x, all AA for normal text):
+
+| Pair | Ratio |
+|---|---|
+| Quadra `#2F7BFF` ↔ `#0A0A0A` (Kind/Link on bg, Index on panel) | 5.09 |
+| Maestro `#FFB000` ↔ `#0A0A0A` | 10.81 |
+| devflow `#C6FF3D` ↔ `#0A0A0A` | 16.76 |
+| Dato bar `#FF3D8B` ↔ `#0A0A0A` | 5.93 |
+| Condates `#9D7BFF` ↔ `#0A0A0A` | 6.33 |
+| `ink-dim` on `bg` / on `bg-raised` | 6.79 / 6.31 |
+
+What execution showed:
+- The close caught what the task reviews missed: on mobile the panels spanned the whole viewport instead of sitting inside the 24px gutters. The spec said "full width (342 at 390)", which is ambiguous. Fixed. Ruling: on mobile the mark is `min(120px, 28vw)` and the index `min(140px, 36vw)`, so they don't overlap at 320.
+- Importing images from `design/assets/` with `astro:assets` works. The files aren't duplicated in `src/`.
+- In full-page screenshots, `loading="lazy"` images below the fold don't show up. That's a screenshot artefact, not a bug: scroll the page before capturing.
+- Nav on one line at 390: 12px gap, letter-spacing 0 on mobile, 0.5 again from 960.
+- At 960 the devflow text is taller than the row (about 33px over each side) but stays clear of the panels (about 70px of margin). Re-measure if the copy gets longer.
+
 ## V3 — Deploy on Cloudflare Workers, spleenteo.com
 
 **In**: `wrangler.jsonc` with static assets (`assets.directory: ./dist`, no Worker script unless needed). Deploy to `*.workers.dev` as a preview. Custom domain `spleenteo.com` (zone already on Cloudflare) via `cf` CLI or Cloudflare MCP. Before the production deploy and the domain binding: **stop for the user's confirmation**. Check for existing DNS records on the zone that would conflict.
