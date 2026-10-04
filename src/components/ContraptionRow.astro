@@ -32,12 +32,12 @@ const { item, side } = Astro.props;
     display: flex;
     flex-direction: column;
     gap: 28px;
+    padding: 0 var(--gutter);
   }
   .text {
     display: flex;
     flex-direction: column;
     gap: 14px;
-    padding: 0 var(--gutter);
   }
   .kind,
   .meta,
@@ -92,6 +92,7 @@ const { item, side } = Astro.props;
     .row {
       display: block;
       position: relative;
+      padding: 0;
       height: calc(660 * var(--k));
     }
     .text {
@@ -99,7 +100,6 @@ const { item, side } = Astro.props;
       top: 50%;
       transform: translateY(-50%);
       gap: 22px;
-      padding: 0;
       --edge: max(0px, calc((100vw - 1440px) / 2));
     }
     .row-left .text {
