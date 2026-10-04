@@ -1,8 +1,8 @@
 ---
 status: open
 phase: slice
-slice: V1
-step: execute
+slice: V2
+step: plan
 work: hub
 stack: astro
 updated: 2026-10-04
@@ -22,7 +22,7 @@ description: "The static page of spleenteo.com in Astro, from contraptions.pen a
 
 ## Slices
 
-- [ ] V1 — Skeleton: Astro, tokens, frame sections
+- [x] V1 — Skeleton: Astro, tokens, frame sections
 - [ ] V2 — The contraptions, "made for me" and the slot
 - [ ] V3 — Deploy on Cloudflare Workers, spleenteo.com
 
@@ -30,3 +30,4 @@ description: "The static page of spleenteo.com in Astro, from contraptions.pen a
 
 <!-- date — step — done — remaining — wall-clock — cost -->
 - 2026-10-04 — opening + slicing — work home, design-spec from the .pen, slices.md, sources committed — V1 plan — ~25 min — n/a (see /cost)
+- 2026-10-04 — V1 plan+review+execute+close — 4 tasks, 1 fix round (T4), 6 rulings, gate green, no overflow at 320–1440 — V2 plan — ~45 min — n/a (see /cost)
