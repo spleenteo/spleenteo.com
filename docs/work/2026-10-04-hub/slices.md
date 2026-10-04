@@ -97,6 +97,6 @@ How it's published:
 
 What execution showed:
 - The first `http://www` request returned 523 right after the rule was created, then 301 on the next attempt: that was propagation. Don't judge the first response.
-- `http://spleenteo.com` serves the page over plain HTTP: the zone's "Always Use HTTPS" setting is `off`. This is out of the mandate and is flagged to the user.
+- `http://spleenteo.com` served the page over plain HTTP ("Always Use HTTPS" was `off`). The user chose to turn it on (via MCP, a zone setting): `http://` → 301 to `https://`, checked.
 - The zone redirect and the `www` record live only in the Cloudflare account. Whoever rebuilds the zone from scratch has to recreate them by hand (this note is the record).
 
