@@ -23,7 +23,7 @@ import { nav } from '../data/site';
     padding: 20px var(--gutter);
     font-family: var(--font-mono);
     font-size: 13px;
-    letter-spacing: 0.5px;
+    letter-spacing: 0;
   }
   .brand {
     color: var(--ink);
@@ -31,12 +31,13 @@ import { nav } from '../data/site';
   ul {
     display: flex;
     flex-wrap: wrap;
-    gap: 4px 16px;
+    gap: 4px 12px;
     margin: 0;
     padding: 0;
     list-style: none;
   }
   li a {
+    display: block;
     color: var(--ink-dim);
   }
   li a:hover {
@@ -44,6 +45,7 @@ import { nav } from '../data/site';
   }
   @media (min-width: 960px) {
     .nav {
+      letter-spacing: 0.5px;
       min-height: 72px;
       padding: 28px var(--gutter);
       flex-wrap: nowrap;

@@ -113,7 +113,7 @@ export const contraptions: Contraption[] = [
     why: 'History rarely comes with exact dates. This lets editors say so instead of inventing a day.',
     meta: 'v0.1.1 · DatoCMS marketplace',
     href: 'https://www.datocms.com/marketplace/plugins/i/datocms-plugin-conditional-dates',
-    linkLabel: 'www.datocms.com/marketplace/plugins/i/datocms-plugin-conditional-dates →',
+    linkLabel: 'datocms.com/marketplace →',
     repo: 'https://github.com/spleenteo/conditional-dates-datocms-plugin',
     accent: 'condates',
   },

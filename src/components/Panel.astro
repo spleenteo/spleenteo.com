@@ -17,7 +17,7 @@ const marks = { quadra, maestro };
 ---
 
 <div class:list={['panel', `panel-${side}`, mark && `mark-${mark}`]} style={`--accent: var(--acc-${accent})`}>
-  <span class="index">{index}</span>
+  <span class="index" aria-hidden="true">{index}</span>
   {
     mark && (
       <Image
