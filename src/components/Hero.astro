@@ -1,0 +1,76 @@
+---
+import { hero } from '../data/site';
+const accents = ['quadra', 'maestro', 'devflow', 'datobar', 'condates'];
+---
+
+<section class="hero">
+  <p class="mono-label">{hero.kicker}</p>
+  <h1>{hero.title}</h1>
+  <div class="row">
+    <p class="lede">{hero.lede}</p>
+    <div class="strip" aria-hidden="true">
+      {accents.map((a) => <span style={`background: var(--acc-${a})`}></span>)}
+    </div>
+  </div>
+  <p class="mono-label">{hero.byline}</p>
+</section>
+
+<style>
+  .hero {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 56px var(--gutter) 72px;
+  }
+  h1 {
+    font-family: var(--font-head);
+    font-weight: 700;
+    color: var(--ink);
+    line-height: 0.9;
+    letter-spacing: -0.033em;
+    font-size: clamp(44px, 15vw, 64px);
+  }
+  .row {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+  .lede {
+    max-width: 620px;
+    color: var(--ink);
+    font-size: 20px;
+    line-height: 1.35;
+  }
+  .strip {
+    display: flex;
+    gap: 8px;
+  }
+  .strip span {
+    width: 32px;
+    height: 8px;
+  }
+  @media (min-width: 960px) {
+    .hero {
+      gap: 40px;
+      padding: 120px var(--gutter) 140px;
+    }
+    h1 {
+      font-size: clamp(64px, 12.8vw, 184px);
+    }
+    .row {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-end;
+    }
+    .lede {
+      font-size: 28px;
+    }
+    .strip {
+      gap: 10px;
+    }
+    .strip span {
+      width: 44px;
+      height: 10px;
+    }
+  }
+</style>

@@ -1,0 +1,55 @@
+---
+import { nav } from '../data/site';
+---
+
+<header class="nav">
+  <a class="brand" href="/">{nav.brand}</a>
+  <nav aria-label="Primary">
+    <ul>
+      {nav.links.map((link) => (
+        <li><a href={link.href}>{link.label}</a></li>
+      ))}
+    </ul>
+  </nav>
+</header>
+
+<style>
+  .nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px 16px;
+    padding: 20px var(--gutter);
+    font-family: var(--font-mono);
+    font-size: 13px;
+    letter-spacing: 0.5px;
+  }
+  .brand {
+    color: var(--ink);
+  }
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px 16px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  li a {
+    color: var(--ink-dim);
+  }
+  li a:hover {
+    color: var(--ink);
+  }
+  @media (min-width: 960px) {
+    .nav {
+      min-height: 72px;
+      padding: 28px var(--gutter);
+      flex-wrap: nowrap;
+    }
+    ul {
+      gap: 32px;
+    }
+  }
+</style>
