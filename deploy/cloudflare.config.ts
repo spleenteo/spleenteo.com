@@ -6,5 +6,6 @@ export default defineConfig({
     compatibilityDate: "2026-10-01",
     observability: { enabled: true },
     workersDev: true,
+    domains: ["spleenteo.com"],
   },
 });
