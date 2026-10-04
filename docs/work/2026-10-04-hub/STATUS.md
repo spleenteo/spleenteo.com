@@ -1,6 +1,6 @@
 ---
-status: open
-phase: slice
+status: closed
+phase: done
 slice: null
 step: null
 work: hub
@@ -33,3 +33,4 @@ description: "The static page of spleenteo.com in Astro, from contraptions.pen a
 - 2026-10-04 — V1 plan+review+execute+close — 4 tasks, 1 fix round (T4), 6 rulings, gate green, no overflow at 320–1440 — V2 plan — ~45 min — n/a (see /cost)
 - 2026-10-04 — V2 plan+review+execute+close — 3 tasks, 8 plan findings fixed, 3 open points settled by user, 1 close-found fix (mobile gutters), 3 rulings, 10/10 links, contrast AA — V3 plan — ~50 min — n/a (see /cost)
 - 2026-10-04 — V3 spike+plan+review+execute+close — cf can't build Astro 7 → deploy/ subfolder; 8 plan findings fixed; preview + spleenteo.com + www 301 published with user's OK; 200, HTML identical to dist — work closing — ~60 min — n/a (see /cost)
+- 2026-10-04 — close — work complete, confirmed by the user — archive — n/a — n/a
