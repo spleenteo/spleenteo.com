@@ -1,0 +1,29 @@
+:root {
+  --bg: #0a0a0a;
+  --bg-raised: #141414;
+  --ink: #f2f0eb;
+  --ink-dim: #9a978f;
+  --line: #2a2a2a;
+
+  --acc-quadra: #2f7bff;
+  --acc-maestro: #ffb000;
+  --acc-devflow: #c6ff3d;
+  --acc-datobar: #ff3d8b;
+  --acc-condates: #9d7bff;
+
+  --slot-border: #3a3a3a;
+  --dot-trama: #2ee59d;
+  --on-accent: #0a0a0a;
+
+  --font-head: 'Bricolage Grotesque', system-ui, sans-serif;
+  --font-body: 'Instrument Sans', system-ui, sans-serif;
+  --font-mono: 'Fragment Mono', ui-monospace, monospace;
+
+  --gutter: 24px;
+}
+
+@media (min-width: 960px) {
+  :root {
+    --gutter: 64px;
+  }
+}
