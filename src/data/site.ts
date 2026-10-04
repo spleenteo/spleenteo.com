@@ -28,7 +28,6 @@ export interface MadeForMeItem {
   name: string;
   desc: string;
   icon?: Icon;
-  dot?: string;
 }
 
 export interface Contact {
@@ -132,7 +131,6 @@ export const madeForMe: { header: string; items: MadeForMeItem[] } = {
     {
       name: 'Trama',
       desc: 'Hierarchical timelines of historical processes, built on DatoCMS.',
-      dot: '#2EE59D',
     },
   ],
 };

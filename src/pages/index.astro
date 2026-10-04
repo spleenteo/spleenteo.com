@@ -5,6 +5,8 @@ import Hero from '../components/Hero.astro';
 import ListHeader from '../components/ListHeader.astro';
 import ContraptionRow from '../components/ContraptionRow.astro';
 import { contraptions } from '../data/site';
+import MadeForMe from '../components/MadeForMe.astro';
+import Slot from '../components/Slot.astro';
 import About from '../components/About.astro';
 import Footer from '../components/Footer.astro';
 ---
@@ -19,7 +21,8 @@ import Footer from '../components/Footer.astro';
         {contraptions.map((item, i) => <ContraptionRow item={item} side={i % 2 === 0 ? 'left' : 'right'} />)}
       </div>
     </section>
-    <!-- V2: "Made for me" and "Slot" sections go here, between Contraptions and About. -->
+    <MadeForMe />
+    <Slot />
     <About />
   </main>
   <Footer />

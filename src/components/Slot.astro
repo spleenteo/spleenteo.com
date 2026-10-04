@@ -1,0 +1,41 @@
+---
+import { slot } from '../data/site';
+---
+
+<section class="slot" aria-label="Next experiment">
+  <div class="box">
+    <p class="mono-label kicker">{slot.kicker}</p>
+    <p class="note">{slot.note}</p>
+  </div>
+</section>
+
+<style>
+  .slot {
+    padding: 0 var(--gutter) 80px;
+  }
+  .box {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    padding: 28px;
+    border: 1px solid var(--slot-border);
+    border-radius: 2px;
+  }
+  .note {
+    font-family: var(--font-body);
+    font-size: 18px;
+    line-height: 1.4;
+    color: var(--ink-dim);
+  }
+  @media (min-width: 960px) {
+    .slot {
+      padding-bottom: 140px;
+    }
+    .box {
+      padding: 56px;
+    }
+    .note {
+      font-size: 22px;
+    }
+  }
+</style>

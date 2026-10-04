@@ -1,0 +1,90 @@
+---
+import { Image } from 'astro:assets';
+import slacky from '../../design/assets/slacky-icon.png';
+import { madeForMe } from '../data/site';
+---
+
+<section class="made">
+  <h2 class="mono-label header">{madeForMe.header}</h2>
+  <ul class="items">
+    {
+      madeForMe.items.map((item) => (
+        <li class="item">
+          {item.icon === 'slacky' ? (
+            <Image class="dot" src={slacky} width={28} densities={[1, 2]} alt="" />
+          ) : (
+            <span class="dot dot-trama" aria-hidden="true" />
+          )}
+          <h3 class="name">{item.name}</h3>
+          <p class="desc">{item.desc}</p>
+        </li>
+      ))
+    }
+  </ul>
+</section>
+
+<style>
+  .made {
+    padding: 0 var(--gutter) 80px;
+  }
+  .header {
+    font-weight: 400;
+    line-height: 1.5;
+    margin-bottom: 24px;
+  }
+  .items {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    padding: 20px 0;
+    border-top: 1px solid var(--line);
+  }
+  .dot {
+    display: block;
+    width: 28px;
+    height: 28px;
+    border-radius: 7px;
+    flex: none;
+  }
+  .dot-trama {
+    background: var(--dot-trama);
+  }
+  .name {
+    font-family: var(--font-head);
+    font-weight: 700;
+    font-size: 26px;
+    letter-spacing: -1px;
+    color: var(--ink);
+  }
+  .desc {
+    font-family: var(--font-body);
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--ink-dim);
+  }
+  @media (min-width: 960px) {
+    .made {
+      padding-bottom: 120px;
+    }
+    .item {
+      flex-direction: row;
+      align-items: center;
+      gap: 40px;
+      padding: 26px 0;
+    }
+    .name {
+      font-size: 32px;
+      width: 260px;
+      flex: none;
+    }
+    .desc {
+      font-size: 18px;
+    }
+  }
+</style>
