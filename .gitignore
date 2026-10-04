@@ -5,7 +5,7 @@ dist/
 .wrangler/
 .env*
 .dev.vars*
-.claude/
+.claude/settings.local.json
 *.log
 .vscode/
 .idea/

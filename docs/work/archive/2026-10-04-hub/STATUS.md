@@ -6,6 +6,7 @@ step: null
 work: hub
 stack: astro
 updated: 2026-10-04
+archived: 2026-10-04
 tags: [work, hub]
 description: "The static page of spleenteo.com in Astro, from contraptions.pen and copy.md, deployed on Cloudflare Workers with static assets."
 ---
