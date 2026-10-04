@@ -31,7 +31,7 @@
 
 ---
 
-### T1: Scaffold Astro + tokens + base layout
+### Task 1 (T1): Scaffold Astro + tokens + base layout
 **Files:** create `package.json` (scripts `dev`, `build`, `preview`, `check`), `astro.config.mjs`, `tsconfig.json` (extends `astro/tsconfigs/strict`), `src/styles/tokens.css`, `src/styles/global.css`, `src/layouts/Base.astro`, `src/pages/index.astro` (temporary placeholder `<main>`).
 **Does:** write the files by hand (no interactive `npm create`) and run `npm install astro @astrojs/check typescript@^6`.
 - `tokens.css`: every token in the spec table as `--bg`, `--bg-raised`, `--ink`, `--ink-dim`, `--line`, `--acc-quadra` … `--acc-condates`, `--slot-border: #3A3A3A`, `--dot-trama: #2EE59D`, `--on-accent: #0A0A0A`, `--font-head/body/mono` with fallback stacks, `--gutter`.
@@ -41,20 +41,20 @@
 **Verify:** `npm run check` and `npm run build` green, `dist/index.html` present.
 **critical** (everything else builds on it).
 
-### T2: Content data module
+### Task 2 (T2): Content data module
 **Files:** create `src/data/site.ts`.
 **Does:** export typed constants with all the copy from `content/copy.md`: `nav` (brand, links with `href`), `hero` (kicker, title, lede, byline), `listHeader` (title, count), `contraptions: Contraption[]` (index "01"…"05", name, kind, oneLiner, why, meta, href, `repo?`, `accent: 'quadra'|'maestro'|'devflow'|'datobar'|'condates'`, `mark?: 'quadra'|'maestro'`), `madeForMe` (header, items with name, desc, `icon?: 'slacky'`, `dot?: string`), `slot` (kicker, note), `about` (kicker "ABOUT", text, contacts with label and href: `ciao@spleenteo.com →` → `mailto:ciao@spleenteo.com`, `github.com/spleenteo →` → `https://github.com/spleenteo`; no x.com), `footer` (left, right). Slacky's description stays exactly "… Private, runs my week." (the `[CHECK]` marker is not in the string; leave a `// [CHECK] "runs my week" — to be confirmed by Matteo` comment beside it).
 **Interfaces produced:** the exported names and the `Contraption` type above. V2 consumes `contraptions`, `madeForMe` and `slot` unchanged.
 **Verify:** `npm run check` green. Compare the strings against `copy.md` by hand.
 **depends on:** T1.
 
-### T3: Nav + Hero
+### Task 3 (T3): Nav + Hero
 **Files:** create `src/components/Nav.astro` and `src/components/Hero.astro`; modify `src/pages/index.astro`.
 **Does:** the Nav and Hero from the spec (§ Nav, § Hero), mobile and desktop, including the five-swatch Accent Strip (it uses the accent tokens). Hero title with the two `clamp()`s from Review focus 1. Nav links per `nav` in `site.ts`.
 **Verify:** gate green; `npm run preview`, then at 390 and 1440 compare against the spec measures; at 320 no horizontal scroll.
 **depends on:** T1, T2.
 
-### T4: List Header + About + Footer
+### Task 4 (T4): List Header + About + Footer
 **Files:** create `src/components/ListHeader.astro`, `src/components/About.astro`, `src/components/Footer.astro`; modify `src/pages/index.astro`.
 **Does:** `<section id="contraptions">` containing only `ListHeader` (V2 adds the rows inside it); `<section id="about">` on `--bg-raised` with the kicker/body two-column layout on desktop and stacked on mobile, contacts as `<a>` with " →"; a `<footer>`. Measures from the spec (§ Contraptions list header, § About, § Footer). Leave a clearly named empty spot in `index.astro` between Contraptions and About for V2's Made for me and Slot.
 **Verify:** gate green; at 390 and 1440 compare against the spec; the `mailto:` and GitHub links work; `#about` anchor works.
