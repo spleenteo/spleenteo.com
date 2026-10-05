@@ -74,6 +74,16 @@ const marks = { quadra, maestro };
       right: calc(-102.5 * var(--k));
       transform: rotate(10deg);
     }
+    @supports (animation-timeline: view()) {
+      @media (prefers-reduced-motion: no-preference) {
+        .panel-left,
+        .panel-right {
+          transform: none;
+          animation: tilt linear both;
+          animation-timeline: view();
+        }
+      }
+    }
     .index {
       top: calc(-40 * var(--k));
       font-size: calc(300 * var(--k));
@@ -98,6 +108,14 @@ const marks = { quadra, maestro };
     .mark-maestro .mark {
       left: calc(70 * var(--k));
       top: calc(220 * var(--k));
+    }
+  }
+  @keyframes tilt {
+    from {
+      transform: rotate(-10deg);
+    }
+    to {
+      transform: rotate(10deg);
     }
   }
 </style>
