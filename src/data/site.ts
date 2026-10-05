@@ -140,9 +140,16 @@ export const slot = {
   note: 'Empty on purpose. Something here will ask for more than a click.',
 };
 
-export const about: { kicker: string; text: string; contacts: Contact[] } = {
+export const about: {
+  kicker: string;
+  text: string;
+  link: { word: string; href: string };
+  contacts: Contact[];
+} = {
   kicker: 'ABOUT',
   text: "Ciao, I'm Matteo. I've been making things for the web for about thirty years. By day I run the partner program at DatoCMS; these are the side projects I play with, pairing my skills with Claude Code.",
+  /** The first occurrence of `word` in `text` becomes a link. */
+  link: { word: 'DatoCMS', href: 'https://www.datocms.com' },
   contacts: [
     { label: 'ciao@spleenteo.com →', href: 'mailto:ciao@spleenteo.com' },
     { label: 'github.com/spleenteo →', href: 'https://github.com/spleenteo' },
