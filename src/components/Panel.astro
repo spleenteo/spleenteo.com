@@ -36,13 +36,13 @@ const marks = { quadra, maestro, datobar };
   .panel {
     position: relative;
     width: 100%;
-    height: 220px;
+    height: 104px;
     background: var(--accent);
     overflow: hidden;
   }
   .index {
     position: absolute;
-    left: 20px;
+    left: 0;
     top: -18px;
     font-family: var(--font-head);
     font-weight: 800;
@@ -53,10 +53,10 @@ const marks = { quadra, maestro, datobar };
   }
   .mark {
     position: absolute;
-    right: 22px;
-    bottom: 22px;
-    width: min(56px, 14vw);
-    height: min(56px, 14vw);
+    right: 24px;
+    top: 32px;
+    width: 40px;
+    height: 40px;
     border-radius: 13px;
     box-shadow: 0 10px 25px #00000055;
   }
@@ -74,13 +74,14 @@ const marks = { quadra, maestro, datobar };
       width: calc(780 * var(--k));
       height: calc(500 * var(--k));
     }
+    /* Static tilt as in the design; the scroll animation below overrides it. */
     .panel-left {
       left: calc(-102.5 * var(--k));
-      transform: rotate(-10deg);
+      transform: rotate(10deg);
     }
     .panel-right {
       right: calc(-102.5 * var(--k));
-      transform: rotate(10deg);
+      transform: rotate(-10deg);
     }
     @supports (animation-timeline: view()) {
       @media (prefers-reduced-motion: no-preference) {
@@ -96,32 +97,37 @@ const marks = { quadra, maestro, datobar };
         }
       }
     }
+    /* Panel contents scale with --k, plus a correction (times --t, 0 at
+       1440 and 1px at 2560) where the Ultra-wide frame departs from it.
+       The number sits in the top corner on the text side, the mark in the
+       bottom corner on the same side. */
     .index {
-      top: calc(-40 * var(--k));
+      top: calc(-16.57 * var(--k) + 24.85 * var(--t));
       font-size: calc(300 * var(--k));
       letter-spacing: -0.047em;
+      --inset: calc(20.16 * var(--k) + 9.64 * var(--t));
     }
     .panel-left .index {
-      left: calc(190 * var(--k));
+      left: auto;
+      right: var(--inset);
     }
     .panel-right .index {
-      left: calc(300 * var(--k));
+      left: var(--inset);
     }
-    /* Marks sit in the panel's bottom corner on the text side: bottom-right
-       on left panels, bottom-left on right panels. */
     .mark {
+      top: auto;
       right: auto;
-      bottom: calc(56 * var(--k));
+      bottom: calc(36.36 * var(--k) + 31.82 * var(--t));
       width: var(--mark);
       height: var(--mark);
       border-radius: calc(var(--mark) * 0.225);
+      --inset: calc(40.92 * var(--k) + 24.53 * var(--t));
     }
     .panel-left .mark {
-      left: auto;
-      right: calc(56 * var(--k));
+      right: var(--inset);
     }
     .panel-right .mark {
-      left: calc(56 * var(--k));
+      left: var(--inset);
     }
   }
   @keyframes tilt {
