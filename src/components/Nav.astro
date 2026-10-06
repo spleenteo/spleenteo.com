@@ -47,7 +47,8 @@ import { nav } from '../data/site';
     .nav {
       letter-spacing: 0.5px;
       min-height: 72px;
-      padding: 28px var(--gutter);
+      padding: clamp(28px, 1.0714vw + 12.57px, 40px) var(--gutter);
+      font-size: var(--mono-size);
       flex-wrap: nowrap;
     }
     ul {

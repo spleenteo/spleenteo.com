@@ -100,31 +100,40 @@ const { item, side } = Astro.props;
       top: 50%;
       transform: translateY(-50%);
       gap: 22px;
-      --edge: max(0px, calc((100vw - 1440px) / 2));
+      /* Distance of the text from the panel's edge of the viewport, and its
+         width: 811/565 at 1440, 1250/900 at 2560. Mirrored on right rows. */
+      --text-at: min(56.319vw, 39.1964vw + 246.57px);
+      width: min(max(565px, 29.9107vw + 134.29px), 100vw - var(--text-at) - 64px);
     }
     .row-left .text {
-      left: calc(811 * var(--k) + var(--edge));
-      width: min(565px, calc(100vw - 811 * var(--k) - 64px - var(--edge)));
+      left: var(--text-at);
     }
     .row-right .text {
-      left: calc(64px + var(--edge));
-      width: min(565px, calc(100vw - 715 * var(--k) - 48px - 64px - var(--edge)));
+      right: var(--text-at);
+    }
+    .kind {
+      font-size: clamp(13px, 0.5357vw + 5.29px, 19px);
+    }
+    .meta,
+    .links {
+      font-size: var(--mono-size);
     }
     .name {
-      font-size: 64px;
-      letter-spacing: -2px;
+      font-size: clamp(64px, 2.8571vw + 22.86px, 96px);
+      letter-spacing: -0.031em;
     }
     .one-liner {
-      font-size: 24px;
+      font-size: clamp(24px, 0.8929vw + 11.14px, 34px);
     }
     .why {
-      font-size: 17px;
+      font-size: clamp(17px, 0.3571vw + 11.86px, 21px);
     }
     .meta-row {
       flex-direction: row;
       flex-wrap: wrap;
       justify-content: space-between;
       gap: 8px 24px;
+      padding-top: 24px;
     }
     .links {
       justify-content: flex-end;

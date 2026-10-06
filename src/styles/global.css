@@ -42,7 +42,7 @@ a:focus-visible {
 
 .mono-label {
   font-family: var(--font-mono);
-  font-size: 13px;
+  font-size: var(--mono-size, 13px);
   letter-spacing: 0.5px;
   color: var(--ink-dim);
 }

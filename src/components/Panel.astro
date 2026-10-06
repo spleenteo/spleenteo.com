@@ -2,6 +2,7 @@
 import { Image } from 'astro:assets';
 import quadra from '../../design/assets/quadra-icon.png';
 import maestro from '../../design/assets/maestro-icon-1024.png';
+import datobar from '../../design/assets/dato-dev-bar.png';
 import type { Accent, Mark } from '../data/site';
 
 interface Props {
@@ -13,7 +14,7 @@ interface Props {
 }
 
 const { index, accent, mark, name, side } = Astro.props;
-const marks = { quadra, maestro };
+const marks = { quadra, maestro, datobar };
 ---
 
 <div class:list={['panel', `panel-${side}`, mark && `mark-${mark}`]} style={`--accent: var(--acc-${accent})`}>
@@ -53,11 +54,18 @@ const marks = { quadra, maestro };
   .mark {
     position: absolute;
     right: 22px;
-    top: 70px;
-    width: min(120px, 28vw);
-    height: min(120px, 28vw);
-    border-radius: 28px;
-    box-shadow: 0 20px 50px #00000055;
+    bottom: 22px;
+    width: min(56px, 14vw);
+    height: min(56px, 14vw);
+    border-radius: 13px;
+    box-shadow: 0 10px 25px #00000055;
+  }
+  /* This icon carries its own rounded shape inside a transparent margin,
+     so the shadow follows the artwork instead of the box. */
+  .mark-datobar .mark {
+    border-radius: 0;
+    box-shadow: none;
+    filter: drop-shadow(0 10px 25px #00000055);
   }
   @media (min-width: 960px) {
     .panel {
@@ -79,7 +87,11 @@ const marks = { quadra, maestro };
         .panel-left,
         .panel-right {
           transform: none;
-          animation: tilt linear both;
+          /* Longhands on purpose: the minifier folds a shorthand plus
+             animation-timeline into `animation: … view()`, which Chrome drops. */
+          animation-name: tilt;
+          animation-timing-function: linear;
+          animation-fill-mode: both;
           animation-timeline: view();
         }
       }
@@ -95,19 +107,21 @@ const marks = { quadra, maestro };
     .panel-right .index {
       left: calc(300 * var(--k));
     }
+    /* Marks sit in the panel's bottom corner on the text side: bottom-right
+       on left panels, bottom-left on right panels. */
     .mark {
       right: auto;
-      width: calc(240 * var(--k));
-      height: calc(240 * var(--k));
-      border-radius: calc(54 * var(--k));
+      bottom: calc(56 * var(--k));
+      width: var(--mark);
+      height: var(--mark);
+      border-radius: calc(var(--mark) * 0.225);
     }
-    .mark-quadra .mark {
-      left: calc(480 * var(--k));
-      top: calc(200 * var(--k));
+    .panel-left .mark {
+      left: auto;
+      right: calc(56 * var(--k));
     }
-    .mark-maestro .mark {
-      left: calc(70 * var(--k));
-      top: calc(220 * var(--k));
+    .panel-right .mark {
+      left: calc(56 * var(--k));
     }
   }
   @keyframes tilt {

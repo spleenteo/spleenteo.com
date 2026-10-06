@@ -64,19 +64,23 @@ const [before, after] = about.text.split(about.link.word, 2) as [string, string]
   @media (min-width: 960px) {
     .about {
       flex-direction: row;
-      gap: 96px;
-      padding: 120px var(--gutter);
+      gap: clamp(96px, 3.9286vw + 39.43px, 140px);
+      padding: clamp(120px, 3.5714vw + 68.57px, 160px) var(--gutter);
     }
     .kicker {
-      width: 260px;
+      width: clamp(260px, 8.9286vw + 131.43px, 360px);
       flex: none;
     }
     .text {
-      font-size: 26px;
+      font-size: clamp(26px, 1.0714vw + 10.57px, 38px);
+      max-width: clamp(820px, 33.9286vw + 331.43px, 1200px);
     }
     .contacts {
       flex-direction: row;
       gap: 40px;
+    }
+    .contacts a {
+      font-size: clamp(15px, 0.2679vw + 11.14px, 18px);
     }
   }
 </style>

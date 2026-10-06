@@ -43,13 +43,13 @@ List header: THE CONTRAPTIONS · 05 usable · 02 made for me
 - Meta: skills · open source
 - Link: https://github.com/spleenteo/devflow
 
-### 04 · Dato bar
+### 04 · DatoCMS dev bar
 
 - Kind: NPM PACKAGE
 - One-liner: A local dev bar for DatoCMS sites: drafts, published content and visual editing in one click.
 - Why: I kept rebuilding the same toggles in every project. Now it's one package that works in any framework.
 - Meta: v0.1.0 · npm
-- Link: https://github.com/spleenteo/datocms-dev-bar
+- Link: https://spleenteo.github.io/datocms-dev-bar/ (repo: https://github.com/spleenteo/datocms-dev-bar)
 
 ### 05 · Condates
 

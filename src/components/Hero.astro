@@ -51,11 +51,11 @@ const accents = ['quadra', 'maestro', 'devflow', 'datobar', 'condates'];
   }
   @media (min-width: 960px) {
     .hero {
-      gap: 40px;
-      padding: 120px var(--gutter) 140px;
+      gap: clamp(40px, 1.4286vw + 19.43px, 56px);
+      padding: clamp(120px, 5.3571vw + 42.86px, 180px) var(--gutter) clamp(140px, 5.3571vw + 62.86px, 200px);
     }
     h1 {
-      font-size: clamp(64px, 12.8vw, 184px);
+      font-size: clamp(64px, 12.8vw, 330px);
     }
     .row {
       flex-direction: row;
@@ -63,14 +63,15 @@ const accents = ['quadra', 'maestro', 'devflow', 'datobar', 'condates'];
       align-items: flex-end;
     }
     .lede {
-      font-size: 28px;
+      font-size: clamp(28px, 1.0714vw + 12.57px, 40px);
+      max-width: clamp(620px, 25vw + 260px, 900px);
     }
     .strip {
-      gap: 10px;
+      gap: clamp(10px, 0.3571vw + 4.86px, 14px);
     }
     .strip span {
-      width: 44px;
-      height: 10px;
+      width: clamp(44px, 1.7857vw + 18.29px, 64px);
+      height: clamp(10px, 0.3571vw + 4.86px, 14px);
     }
   }
 </style>

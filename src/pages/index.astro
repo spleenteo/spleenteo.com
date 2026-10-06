@@ -41,8 +41,13 @@ import Footer from '../components/Footer.astro';
   }
   @media (min-width: 960px) {
     .contraptions {
-      --k: calc(min(100vw, 1440px) / 1440);
-      padding: 40px 0 calc(160 * var(--k));
+      /* 1px at 1440, 1.6px at 2560: past 1440 the panels keep bleeding
+         off the edges and grow slower than the viewport. */
+      --k: min(100vw / 1440, 0.2286px + 0.05357vw);
+      /* Product icons stay small against the panels: 120px at 1440,
+         shrinking to 100px at 2560 while the panels keep growing. */
+      --mark: min(120 * var(--k), clamp(100px, 145.71px - 1.7857vw, 120px));
+      padding: clamp(40px, 1.7857vw + 14.29px, 60px) 0 calc(160 * var(--k));
     }
     .rows {
       gap: calc(140 * var(--k));

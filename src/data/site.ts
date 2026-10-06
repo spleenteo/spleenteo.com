@@ -1,7 +1,7 @@
 // All site copy. Source of truth: content/copy.md. Strings are verbatim.
 
 export type Accent = 'quadra' | 'maestro' | 'devflow' | 'datobar' | 'condates';
-export type Mark = 'quadra' | 'maestro';
+export type Mark = 'quadra' | 'maestro' | 'datobar';
 export type Icon = 'slacky';
 
 export interface NavLink {
@@ -96,14 +96,16 @@ export const contraptions: Contraption[] = [
   },
   {
     index: '04',
-    name: 'Dato bar',
+    name: 'DatoCMS dev bar',
     kind: 'NPM PACKAGE',
     oneLiner: 'A local dev bar for DatoCMS sites: drafts, published content and visual editing in one click.',
     why: "I kept rebuilding the same toggles in every project. Now it's one package that works in any framework.",
     meta: 'v0.1.0 · npm',
-    href: 'https://github.com/spleenteo/datocms-dev-bar',
-    linkLabel: 'github.com/spleenteo/datocms-dev-bar →',
+    href: 'https://spleenteo.github.io/datocms-dev-bar/',
+    linkLabel: 'spleenteo.github.io/datocms-dev-bar →',
+    repo: 'https://github.com/spleenteo/datocms-dev-bar',
     accent: 'datobar',
+    mark: 'datobar',
   },
   {
     index: '05',

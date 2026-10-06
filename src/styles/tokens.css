@@ -25,6 +25,8 @@
 
 @media (min-width: 960px) {
   :root {
-    --gutter: 64px;
+    /* 64px at 1440, 160px at 2560 (Ultra-wide frame in design/contraptions.pen) */
+    --gutter: clamp(64px, 8.5714vw - 59.43px, 160px);
+    --mono-size: clamp(13px, 0.2679vw + 9.14px, 16px);
   }
 }
