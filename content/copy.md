@@ -17,7 +17,7 @@ Lines marked `[CHECK]` are Alfred's inferences: Matteo confirms, rewrites or cut
 
 ## The contraptions
 
-List header: THE CONTRAPTIONS · 05 usable · 02 made for me
+List header: THE CONTRAPTIONS · 06 usable · 02 made for me
 
 ### 01 · Quadra
 
@@ -58,6 +58,14 @@ List header: THE CONTRAPTIONS · 05 usable · 02 made for me
 - Why: History rarely comes with exact dates. This lets editors say so instead of inventing a day.
 - Meta: v0.1.1 · DatoCMS marketplace
 - Link: https://www.datocms.com/marketplace/plugins/i/datocms-plugin-conditional-dates (repo: https://github.com/spleenteo/conditional-dates-datocms-plugin)
+
+### 06 · Grafo
+
+- Kind: DATOCMS PLUGIN
+- One-liner: Grafo draws the records of a DatoCMS project and the links between them.
+- Why: Pick a record, see what it links to and what links back, open it in the editor.
+- Meta: free · MIT · open source
+- Link: https://spleenteo.github.io/grafo-datocms-plugin/ (repo: https://github.com/spleenteo/grafo-datocms-plugin)
 
 ## Made for me
 

@@ -1,7 +1,7 @@
 // All site copy. Source of truth: content/copy.md. Strings are verbatim.
 
-export type Accent = 'quadra' | 'maestro' | 'devflow' | 'datobar' | 'condates';
-export type Mark = 'quadra' | 'maestro' | 'datobar';
+export type Accent = 'quadra' | 'maestro' | 'devflow' | 'datobar' | 'condates' | 'grafo';
+export type Mark = 'quadra' | 'maestro' | 'datobar' | 'grafo';
 export type Icon = 'slacky';
 
 export interface NavLink {
@@ -53,7 +53,7 @@ export const hero = {
 
 export const listHeader = {
   title: 'THE CONTRAPTIONS',
-  count: '05 usable · 02 made for me',
+  count: '06 usable · 02 made for me',
 };
 
 export const contraptions: Contraption[] = [
@@ -118,6 +118,19 @@ export const contraptions: Contraption[] = [
     linkLabel: 'datocms.com/marketplace →',
     repo: 'https://github.com/spleenteo/conditional-dates-datocms-plugin',
     accent: 'condates',
+  },
+  {
+    index: '06',
+    name: 'Grafo',
+    kind: 'DATOCMS PLUGIN',
+    oneLiner: 'Grafo draws the records of a DatoCMS project and the links between them.',
+    why: 'Pick a record, see what it links to and what links back, open it in the editor.',
+    meta: 'free · MIT · open source',
+    href: 'https://spleenteo.github.io/grafo-datocms-plugin/',
+    linkLabel: 'spleenteo.github.io/grafo-datocms-plugin →',
+    repo: 'https://github.com/spleenteo/grafo-datocms-plugin',
+    accent: 'grafo',
+    mark: 'grafo',
   },
 ];
 
