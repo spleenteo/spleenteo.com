@@ -4,6 +4,7 @@ import quadra from '../../design/assets/quadra-icon.png';
 import maestro from '../../design/assets/maestro-icon-1024.png';
 import datobar from '../../design/assets/dato-dev-bar.png';
 import grafo from '../../design/assets/grafo-icon.png';
+import slacky from '../../design/assets/slacky-icon.png';
 import type { Accent, Mark } from '../data/site';
 
 interface Props {
@@ -15,7 +16,7 @@ interface Props {
 }
 
 const { index, accent, mark, name, side } = Astro.props;
-const marks = { quadra, maestro, datobar, grafo };
+const marks = { quadra, maestro, datobar, grafo, slacky };
 ---
 
 <div class:list={['panel', `panel-${side}`, mark && `mark-${mark}`]} style={`--accent: var(--acc-${accent})`}>

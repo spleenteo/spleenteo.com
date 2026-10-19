@@ -1,8 +1,7 @@
 // All site copy. Source of truth: content/copy.md. Strings are verbatim.
 
-export type Accent = 'quadra' | 'maestro' | 'devflow' | 'datobar' | 'condates' | 'grafo';
-export type Mark = 'quadra' | 'maestro' | 'datobar' | 'grafo';
-export type Icon = 'slacky';
+export type Accent = 'quadra' | 'maestro' | 'devflow' | 'datobar' | 'condates' | 'grafo' | 'slacky';
+export type Mark = 'quadra' | 'maestro' | 'datobar' | 'grafo' | 'slacky';
 
 export interface NavLink {
   label: string;
@@ -16,9 +15,9 @@ export interface Contraption {
   oneLiner: string;
   why: string;
   meta: string;
-  href: string;
+  href?: string;
   /** href without protocol and trailing slash, plus " →". Provisional default. */
-  linkLabel: string;
+  linkLabel?: string;
   repo?: string;
   accent: Accent;
   mark?: Mark;
@@ -27,7 +26,6 @@ export interface Contraption {
 export interface MadeForMeItem {
   name: string;
   desc: string;
-  icon?: Icon;
 }
 
 export interface Contact {
@@ -59,16 +57,16 @@ export const listHeader = {
 export const contraptions: Contraption[] = [
   {
     index: '01',
-    name: 'Quadra',
-    kind: 'MACOS APP',
-    oneLiner: 'Straighten a crooked photo by drawing one line.',
-    why: "My daughter needed to fix tilted pictures. Every app I found wanted a subscription for a two-second job, so I made one that doesn't.",
-    meta: 'v0.6.0 · macOS · open source',
-    href: 'https://spleenteo.github.io/quadra/',
-    linkLabel: 'spleenteo.github.io/quadra →',
-    repo: 'https://github.com/spleenteo/quadra',
-    accent: 'quadra',
-    mark: 'quadra',
+    name: 'Grafo',
+    kind: 'DATOCMS PLUGIN',
+    oneLiner: 'Grafo draws the records of a DatoCMS project and the links between them.',
+    why: 'Pick a record, see what it links to and what links back, open it in the editor.',
+    meta: 'free · MIT · open source',
+    href: 'https://spleenteo.github.io/grafo-datocms-plugin/',
+    linkLabel: 'spleenteo.github.io/grafo-datocms-plugin →',
+    repo: 'https://github.com/spleenteo/grafo-datocms-plugin',
+    accent: 'grafo',
+    mark: 'grafo',
   },
   {
     index: '02',
@@ -85,14 +83,16 @@ export const contraptions: Contraption[] = [
   },
   {
     index: '03',
-    name: 'devflow / projectflow',
-    kind: 'CLAUDE CODE SKILLS',
-    oneLiner: 'Take a piece of work from idea to done, one small slice at a time.',
-    why: 'Brainstorming, framing, shaping and planning: devflow for code, projectflow for life projects. Both keep the thread on disk between sessions.',
-    meta: 'skills · open source',
-    href: 'https://github.com/spleenteo/devflow',
-    linkLabel: 'github.com/spleenteo/devflow →',
-    accent: 'devflow',
+    name: 'Quadra',
+    kind: 'MACOS APP',
+    oneLiner: 'Straighten a crooked photo by drawing one line.',
+    why: "My daughter needed to fix tilted pictures. Every app I found wanted a subscription for a two-second job, so I made one that doesn't.",
+    meta: 'v0.6.0 · macOS · open source',
+    href: 'https://spleenteo.github.io/quadra/',
+    linkLabel: 'spleenteo.github.io/quadra →',
+    repo: 'https://github.com/spleenteo/quadra',
+    accent: 'quadra',
+    mark: 'quadra',
   },
   {
     index: '04',
@@ -109,6 +109,28 @@ export const contraptions: Contraption[] = [
   },
   {
     index: '05',
+    name: 'Slacky',
+    kind: 'PRIVATE TOOL',
+    oneLiner: 'A task manager that notices when I procrastinate and says so.',
+    // [CHECK] "runs my week" — to be confirmed by Matteo
+    why: 'Private, runs my week.',
+    meta: 'private · not for sale, not for sign-up',
+    accent: 'slacky',
+    mark: 'slacky',
+  },
+  {
+    index: '06',
+    name: 'devflow / projectflow',
+    kind: 'CLAUDE CODE SKILLS',
+    oneLiner: 'Take a piece of work from idea to done, one small slice at a time.',
+    why: 'Brainstorming, framing, shaping and planning: devflow for code, projectflow for life projects. Both keep the thread on disk between sessions.',
+    meta: 'skills · open source',
+    href: 'https://github.com/spleenteo/devflow',
+    linkLabel: 'github.com/spleenteo/devflow →',
+    accent: 'devflow',
+  },
+  {
+    index: '07',
     name: 'Condates',
     kind: 'DATOCMS PLUGIN',
     oneLiner: 'Dates you only half know: a year, a month, or the full day.',
@@ -119,30 +141,11 @@ export const contraptions: Contraption[] = [
     repo: 'https://github.com/spleenteo/conditional-dates-datocms-plugin',
     accent: 'condates',
   },
-  {
-    index: '06',
-    name: 'Grafo',
-    kind: 'DATOCMS PLUGIN',
-    oneLiner: 'Grafo draws the records of a DatoCMS project and the links between them.',
-    why: 'Pick a record, see what it links to and what links back, open it in the editor.',
-    meta: 'free · MIT · open source',
-    href: 'https://spleenteo.github.io/grafo-datocms-plugin/',
-    linkLabel: 'spleenteo.github.io/grafo-datocms-plugin →',
-    repo: 'https://github.com/spleenteo/grafo-datocms-plugin',
-    accent: 'grafo',
-    mark: 'grafo',
-  },
 ];
 
 export const madeForMe: { header: string; items: MadeForMeItem[] } = {
   header: 'MADE FOR ME · NOT FOR SALE, NOT FOR SIGN-UP',
   items: [
-    {
-      name: 'Slacky',
-      // [CHECK] "runs my week" — to be confirmed by Matteo
-      desc: 'A task manager that notices when I procrastinate and says so. Private, runs my week.',
-      icon: 'slacky',
-    },
     {
       name: 'Trama',
       desc: 'Hierarchical timelines of historical processes, built on DatoCMS.',

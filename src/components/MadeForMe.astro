@@ -1,6 +1,4 @@
 ---
-import { Image } from 'astro:assets';
-import slacky from '../../design/assets/slacky-icon.png';
 import { madeForMe } from '../data/site';
 ---
 
@@ -10,11 +8,7 @@ import { madeForMe } from '../data/site';
     {
       madeForMe.items.map((item) => (
         <li class="item">
-          {item.icon === 'slacky' ? (
-            <Image class="dot" src={slacky} width={28} densities={[1, 2]} alt="" />
-          ) : (
-            <span class="dot dot-trama" aria-hidden="true" />
-          )}
+          <span class="dot dot-trama" aria-hidden="true" />
           <h3 class="name">{item.name}</h3>
           <p class="desc">{item.desc}</p>
         </li>

@@ -19,10 +19,14 @@ const { item, side } = Astro.props;
     <p class="why">{item.why}</p>
     <div class="meta-row">
       <p class="meta">{item.meta}</p>
-      <p class="links">
-        <a href={item.href}>{item.linkLabel}</a>
-        {item.repo && <a href={item.repo}>repo →</a>}
-      </p>
+      {
+        (item.href || item.repo) && (
+          <p class="links">
+            {item.href && <a href={item.href}>{item.linkLabel}</a>}
+            {item.repo && <a href={item.repo}>repo →</a>}
+          </p>
+        )
+      }
     </div>
   </div>
 </article>

@@ -19,13 +19,13 @@ Lines marked `[CHECK]` are Alfred's inferences: Matteo confirms, rewrites or cut
 
 List header: THE CONTRAPTIONS · 06 usable · 02 made for me
 
-### 01 · Quadra
+### 01 · Grafo
 
-- Kind: MACOS APP
-- One-liner: Straighten a crooked photo by drawing one line.
-- Why: My daughter needed to fix tilted pictures. Every app I found wanted a subscription for a two-second job, so I made one that doesn't.
-- Meta: v0.6.0 · macOS · open source
-- Link: https://spleenteo.github.io/quadra/ (repo: https://github.com/spleenteo/quadra)
+- Kind: DATOCMS PLUGIN
+- One-liner: Grafo draws the records of a DatoCMS project and the links between them.
+- Why: Pick a record, see what it links to and what links back, open it in the editor.
+- Meta: free · MIT · open source
+- Link: https://spleenteo.github.io/grafo-datocms-plugin/ (repo: https://github.com/spleenteo/grafo-datocms-plugin)
 
 ### 02 · Maestro
 
@@ -35,13 +35,13 @@ List header: THE CONTRAPTIONS · 06 usable · 02 made for me
 - Meta: template + plugin · open source
 - Link: https://spleenteo.github.io/maestro/ (repo: https://github.com/spleenteo/maestro)
 
-### 03 · devflow / projectflow
+### 03 · Quadra
 
-- Kind: CLAUDE CODE SKILLS
-- One-liner: Take a piece of work from idea to done, one small slice at a time.
-- Why: Brainstorming, framing, shaping and planning: devflow for code, projectflow for life projects. Both keep the thread on disk between sessions.
-- Meta: skills · open source
-- Link: https://github.com/spleenteo/devflow
+- Kind: MACOS APP
+- One-liner: Straighten a crooked photo by drawing one line.
+- Why: My daughter needed to fix tilted pictures. Every app I found wanted a subscription for a two-second job, so I made one that doesn't.
+- Meta: v0.6.0 · macOS · open source
+- Link: https://spleenteo.github.io/quadra/ (repo: https://github.com/spleenteo/quadra)
 
 ### 04 · DatoCMS dev bar
 
@@ -51,7 +51,23 @@ List header: THE CONTRAPTIONS · 06 usable · 02 made for me
 - Meta: v0.1.0 · npm
 - Link: https://spleenteo.github.io/datocms-dev-bar/ (repo: https://github.com/spleenteo/datocms-dev-bar)
 
-### 05 · Condates
+### 05 · Slacky
+
+- Kind: PRIVATE TOOL
+- One-liner: A task manager that notices when I procrastinate and says so.
+- Why: Private, runs my week. `[CHECK: "runs my week"]`
+- Meta: private · not for sale, not for sign-up
+- Link: none
+
+### 06 · devflow / projectflow
+
+- Kind: CLAUDE CODE SKILLS
+- One-liner: Take a piece of work from idea to done, one small slice at a time.
+- Why: Brainstorming, framing, shaping and planning: devflow for code, projectflow for life projects. Both keep the thread on disk between sessions.
+- Meta: skills · open source
+- Link: https://github.com/spleenteo/devflow
+
+### 07 · Condates
 
 - Kind: DATOCMS PLUGIN
 - One-liner: Dates you only half know: a year, a month, or the full day.
@@ -59,19 +75,10 @@ List header: THE CONTRAPTIONS · 06 usable · 02 made for me
 - Meta: v0.1.1 · DatoCMS marketplace
 - Link: https://www.datocms.com/marketplace/plugins/i/datocms-plugin-conditional-dates (repo: https://github.com/spleenteo/conditional-dates-datocms-plugin)
 
-### 06 · Grafo
-
-- Kind: DATOCMS PLUGIN
-- One-liner: Grafo draws the records of a DatoCMS project and the links between them.
-- Why: Pick a record, see what it links to and what links back, open it in the editor.
-- Meta: free · MIT · open source
-- Link: https://spleenteo.github.io/grafo-datocms-plugin/ (repo: https://github.com/spleenteo/grafo-datocms-plugin)
-
 ## Made for me
 
 Header: MADE FOR ME · NOT FOR SALE, NOT FOR SIGN-UP
 
-- Slacky: A task manager that notices when I procrastinate and says so. Private, runs my week. `[CHECK: "runs my week"]`
 - Trama: Hierarchical timelines of historical processes, built on DatoCMS.
 
 ## Slot (empty on purpose)
