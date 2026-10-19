@@ -19,8 +19,13 @@ const { index, accent, mark, name, side } = Astro.props;
 const marks = { quadra, maestro, datobar, grafo, slacky };
 ---
 
-<div class:list={['panel', `panel-${side}`, mark && `mark-${mark}`]} style={`--accent: var(--acc-${accent})`}>
+<div
+  class:list={['panel', `panel-${side}`, mark && `mark-${mark}`]}
+  style={`--accent: var(--acc-${accent})`}
+>
+  <span class="sheen" aria-hidden="true"></span>
   <span class="index" aria-hidden="true">{index}</span>
+  <span class="halo" aria-hidden="true"></span>
   {
     mark && (
       <Image
@@ -39,8 +44,128 @@ const marks = { quadra, maestro, datobar, grafo, slacky };
     position: relative;
     width: 100%;
     height: 104px;
-    background: var(--accent);
+    /* A faint shade on the corner opposite the sheen. */
+    background: linear-gradient(105deg, #00000030, transparent 60%), var(--accent);
     overflow: hidden;
+    isolation: isolate;
+  }
+  /* Glass sheen: a soft vertical band of light that drifts and turns while
+     the panel scrolls past. The band carries a thin iridescent fringe on
+     both edges, so it reads as glass rather than a plain white gradient.
+     It is twice the panel's size so the motion never shows its edges. */
+  .sheen,
+  .panel::after {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+  }
+  .sheen {
+    inset: -50%;
+    background: linear-gradient(
+      105deg,
+      transparent 15%,
+      #ff4fd81f 29%,
+      #ffffff1c 37.5%,
+      #ffffff70 50%,
+      #ffffff1c 62.5%,
+      #4fd8ff24 71%,
+      transparent 85%
+    );
+  }
+  /* Texture: fine grain plus vertical fluting, a little stronger on hover. */
+  .panel::after {
+    content: '';
+    background-image:
+      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='2.6 0 0 0 -.8 2.6 0 0 0 -.8 2.6 0 0 0 -.8 0 0 0 0 .55'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E"),
+      repeating-linear-gradient(
+        100deg,
+        #ffffff00 0,
+        #ffffff33 2px,
+        #ffffff00 4px,
+        #00000026 7px,
+        #ffffff00 9px
+      );
+    mix-blend-mode: overlay;
+    opacity: 0.39;
+    transition: opacity 0.5s;
+  }
+  /* Liquid halo: two layers of blurred colour pools turning in opposite
+     directions at different speeds, so the colours keep mixing on hover.
+     Only transform animates; the blur is rasterised once. */
+  .halo,
+  .halo::before,
+  .halo::after {
+    position: absolute;
+    pointer-events: none;
+  }
+  .halo {
+    inset: -35%;
+    mix-blend-mode: overlay;
+    opacity: 0;
+    transition: opacity 0.6s;
+  }
+  .halo::before,
+  .halo::after {
+    content: '';
+    inset: 0;
+    filter: blur(28px);
+    animation: swirl 16s linear infinite paused;
+  }
+  .halo::before {
+    background:
+      radial-gradient(circle at 32% 34%, #ff3df2 0, transparent 22%),
+      radial-gradient(circle at 68% 42%, #3dd8ff 0, transparent 24%),
+      radial-gradient(circle at 46% 70%, #fff23d 0, transparent 20%);
+  }
+  .halo::after {
+    background:
+      radial-gradient(circle at 60% 28%, #6dff8a 0, transparent 20%),
+      radial-gradient(circle at 36% 60%, #8a5cff 0, transparent 22%),
+      radial-gradient(circle at 70% 68%, #ff8a3d 0, transparent 20%);
+    animation-duration: 11s;
+    animation-direction: reverse;
+  }
+  @keyframes swirl {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  @media (hover: hover) {
+    .panel:hover::after {
+      opacity: 0.62;
+    }
+    .panel:hover .halo {
+      opacity: 0.45;
+    }
+    @media (prefers-reduced-motion: no-preference) {
+      .panel:hover .halo::before,
+      .panel:hover .halo::after {
+        animation-play-state: running;
+      }
+    }
+  }
+  @supports (animation-timeline: view()) {
+    @media (prefers-reduced-motion: no-preference) {
+      .sheen {
+        animation-name: sheen;
+        animation-timing-function: linear;
+        animation-fill-mode: both;
+        animation-timeline: view();
+      }
+    }
+  }
+  @keyframes sheen {
+    from {
+      transform: translateX(-10%) rotate(30deg);
+    }
+    to {
+      transform: translateX(10%) rotate(-30deg);
+    }
+  }
+  /* Content sits above the effects. */
+  .index,
+  .mark {
+    z-index: 1;
   }
   .index {
     position: absolute;
@@ -141,3 +266,4 @@ const marks = { quadra, maestro, datobar, grafo, slacky };
     }
   }
 </style>
+
