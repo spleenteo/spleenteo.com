@@ -1,7 +1,7 @@
 // All site copy. Source of truth: content/copy.md. Strings are verbatim.
 
-export type Accent = 'quadra' | 'maestro' | 'devflow' | 'datobar' | 'condates' | 'grafo' | 'slacky';
-export type Mark = 'quadra' | 'maestro' | 'datobar' | 'grafo' | 'slacky';
+export type Accent = 'quadra' | 'maestro' | 'flow' | 'datobar' | 'condates' | 'grafo' | 'slacky';
+export type Mark = 'quadra' | 'maestro' | 'datobar' | 'grafo' | 'slacky' | 'flow';
 
 export interface NavLink {
   label: string;
@@ -120,14 +120,16 @@ export const contraptions: Contraption[] = [
   },
   {
     index: '06',
-    name: 'devflow / projectflow',
-    kind: 'CLAUDE CODE SKILLS',
+    name: 'Flow',
+    kind: 'CLAUDE CODE PLUGIN',
     oneLiner: 'Take a piece of work from idea to done, one small slice at a time.',
-    why: 'Brainstorming, framing, shaping and planning: devflow for code, projectflow for life projects. Both keep the thread on disk between sessions.',
-    meta: 'skills · open source',
-    href: 'https://github.com/spleenteo/devflow',
-    linkLabel: 'github.com/spleenteo/devflow →',
-    accent: 'devflow',
+    why: '/flow:dev takes code to a merged branch, /flow:project runs projects that last for months. The state stays on disk, so a work picks up days later in a new session.',
+    meta: 'plugin · open source',
+    href: 'https://spleenteo.github.io/flow/',
+    linkLabel: 'spleenteo.github.io/flow →',
+    repo: 'https://github.com/spleenteo/flow',
+    accent: 'flow',
+    mark: 'flow',
   },
   {
     index: '07',

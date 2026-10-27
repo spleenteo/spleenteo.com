@@ -59,13 +59,13 @@ List header: THE CONTRAPTIONS · 06 usable · 02 made for me
 - Meta: private · not for sale, not for sign-up
 - Link: none
 
-### 06 · devflow / projectflow
+### 06 · Flow
 
-- Kind: CLAUDE CODE SKILLS
+- Kind: CLAUDE CODE PLUGIN
 - One-liner: Take a piece of work from idea to done, one small slice at a time.
-- Why: Brainstorming, framing, shaping and planning: devflow for code, projectflow for life projects. Both keep the thread on disk between sessions.
-- Meta: skills · open source
-- Link: https://github.com/spleenteo/devflow
+- Why: /flow:dev takes code to a merged branch, /flow:project runs projects that last for months. The state stays on disk, so a work picks up days later in a new session.
+- Meta: plugin · open source
+- Link: https://spleenteo.github.io/flow/ (repo: https://github.com/spleenteo/flow)
 
 ### 07 · Condates
 
